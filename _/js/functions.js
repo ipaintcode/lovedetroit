@@ -29,7 +29,7 @@ function setInnerContainerY(ele, options) {
 	$(ele).stop().animate({
 		'top': y+20,
 		'left': x
-	}, 500);
+	}, 800);
 }
 
 
