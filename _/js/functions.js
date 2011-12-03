@@ -11,7 +11,7 @@ function setContainerHeight() {
 		//$('.resizer-container').height($(window).height());
 		$('.resizer-container').stop().animate({
 			height: $(window).height()
-		}, 300);
+		}, 300, 'easeOutElastic');
 		$('.centerizer').each(function(index) {
 			setInnerContainerY($(this), {
 				width:	$(window).width(),
@@ -29,7 +29,7 @@ function setInnerContainerY(ele, options) {
 	$(ele).stop().animate({
 		'top': y+20,
 		'left': x
-	}, 800);
+	}, 1200, 'easeOutElastic');
 }
 
 
