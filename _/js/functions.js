@@ -8,7 +8,10 @@ $(document).ready(function(){
 function setContainerHeight() {
 	
 	if($(window).height() >= 600) {
-		$('.resizer-container').height($(window).height());
+		//$('.resizer-container').height($(window).height());
+		$('.resizer-container').stop().animate({
+			height: $(window).height()
+		}, 300);
 		$('.centerizer').each(function(index) {
 			setInnerContainerY($(this), {
 				width:	$(window).width(),
