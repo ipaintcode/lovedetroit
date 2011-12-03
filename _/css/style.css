@@ -120,6 +120,42 @@ button {width: auto; overflow: visible;}
 
 
 
+/* @font-face styles!
+-------------------------------------------------------------------------------*/
+
+@font-face {
+	font-family: 'ProximaNovaBold';
+	src: url('../fonts/bold/ProximaNova-Bold-webfont.eot');
+	src: local('☺'), url('../fonts/bold/ProximaNova-Bold-webfont.woff') format('woff'), url('../fonts/bold/ProximaNova-Bold-webfont.ttf') format('truetype'), url('../fonts/bold/ProximaNova-Bold-webfont.svg#webfontPkpOAKCy') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaRegular';
+	src: url('../fonts/regular/ProximaNova-Reg-webfont.eot');
+	src: local('☺'), url('../fonts/regular/ProximaNova-Reg-webfont.woff') format('woff'), url('../fonts/regular/ProximaNova-Reg-webfont.ttf') format('truetype'), url('../fonts/regular/ProximaNova-Reg-webfont.svg#webfontKqnc2168') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaSemibold';
+	src: url('../fonts/semibold/ProximaNova-Sbold-webfont.eot');
+	src: local('☺'), url('../fonts/semibold/ProximaNova-Sbold-webfont.woff') format('woff'), url('../fonts/semibold/ProximaNova-Sbold-webfont.ttf') format('truetype'), url('../fonts/semibold/ProximaNova-Sbold-webfont.svg#webfontILGjOKPE') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaLight';
+	src: url('../fonts/light/ProximaNova-Light-webfont.eot');
+	src: local('☺'), url('../fonts/light/ProximaNova-Light-webfont.woff') format('woff'), url('../fonts/light/ProximaNova-Light-webfont.ttf') format('truetype'), url('../fonts/light/ProximaNova-Light-webfont.svg#webfontILGjOKPE') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 /* Ok, this is where the fun starts.
 -------------------------------------------------------------------------------*/
 
@@ -239,13 +275,15 @@ header div {
 	width: 960px;
 	height: 400px;
 	background: rgba(255, 255, 255, .5);
+	font-size: 20px;
+	font-family: "ProximaNovaRegular", Arial, sans-serif;
 }
 
 footer {
 	background: #F3F2DC;
 	width: 100%;
 }
-
+/*font-family: "ProximaNovaSemibold", Arial, sans-serif;*/
 
 /* Print styles!
 -------------------------------------------------------------------------------*/
