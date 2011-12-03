@@ -6,7 +6,7 @@
 $(document).ready(function(){
 
 function setContainerHeight() {
-	$('.artist-container').height($(window).height());
+	$('.artist-container, footer').height($(window).height());
 }
 
 setContainerHeight();
