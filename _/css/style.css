@@ -197,6 +197,10 @@ header {
 	width: 100%;
 }
 
+header div {
+	display: none;
+}
+
 .billboard {
 	background: #E9F3F3;
 	width: 100%;
