@@ -8,20 +8,24 @@ $(document).ready(function(){
 function setContainerHeight() {
 	
 	if($(window).height() >= 600) {
-		$('.artist-container, .billboard, footer').height($(window).height());
-		setInnerContainerY($('.billboard hgroup'));
+		$('.resizer-container').height($(window).height());
+		$('.centerizer').each(function(index) {
+			setInnerContainerY($(this), {
+				width:	$(window).width(),
+				height: $(window).height()
+			});
+		});
 	}
 }
 
-function setInnerContainerY(ele) {	
-	var height = ($('.billboard').height()-$(ele).height())/2;
-	var width = ($(window).width()-$(ele).width())/2;
-	$(ele).css({
-		'position': 'absolute'
-	});
+function setInnerContainerY(ele, options) {
+		
+	var x = (options.width-$(ele).width())/2;
+	var y = (options.height-$(ele).height())/2;
+		
 	$(ele).stop().animate({
-		'top': height,
-		'left': width
+		'top': y+20,
+		'left': x
 	}, 500);
 }
 
