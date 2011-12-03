@@ -178,11 +178,13 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 }
 
 header {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100px;
 	overflow: hidden;
+	background white;
+	border-bottom: 1px solid #99000;
 }
 
 
