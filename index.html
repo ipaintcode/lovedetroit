@@ -10,19 +10,19 @@
 <head id="www-sitename-com" data-template-set="html5-reset">
 
 	<meta charset="utf-8">
-	
+
 	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
+
 	<title>Love Detroit 2011 | Team Detroit Holiday Card</title>
-	
+
 	<meta name="title" content="">
 	<meta name="description" content="">
 	<!-- Google will often use this as its description of your page/site. Make it good. -->
-	
+
 	<meta name="google-site-verification" content="">
 	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
-	
+
 	<meta name="author" content="Your Name Here">
 	<meta name="Copyright" content="Copyright Your Name Here 2011. All Rights Reserved.">
 
@@ -30,9 +30,9 @@
 	<meta name="DC.title" content="Project Name">
 	<meta name="DC.subject" content="What you're about.">
 	<meta name="DC.creator" content="Who made this site.">
-	
+
 	<!--  Mobile Viewport Fix
-	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag
 	device-width : Occupy full width of the screen in its current orientation
 	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
 	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
@@ -46,16 +46,17 @@
 		 - size: 16x16 or 32x32
 		 - transparency is OK
 		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
-		 
+
 	<link rel="apple-touch-icon" href="_/img/apple-touch-icon.png">
 	<!-- The is the icon for iOS's Web Clip.
 		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
 		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
 		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
-	
+
 	<!-- CSS: screen, mobile & print are all in the same file -->
 	<link rel="stylesheet" href="_/css/style.css">
-	
+	<link href="_/skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+
 	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
 	<!-- Grab http://www.cdnjs.com/ - CDN Modernizr. fall back to local if necessary -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
@@ -68,44 +69,151 @@
 <div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
 
 	<header>
-		
-		<h1><a href="/">Home of Love Detroit 2011</a></h1>
-		
-		<nav>
-		
-			<ol>
-				<li><a href="">Nav Link 1</a></li>
-				<li><a href="">Nav Link 2</a></li>
-				<li><a href="">Nav Link 3</a></li>
-				<li><a href="">Nav Link 4</a></li>
-			</ol>
-		
-		</nav>
-	
+
+		<div id="jp_container" class="jp-video jp-video-270p">
+			<div class="jp-type-playlist">
+				<div id="jquery_jplayer" class="jp-jplayer"></div>
+				<div class="jp-gui">
+					<div class="jp-video-play">
+						<a href="javascript:;" class="jp-video-play-icon" tabindex="1">play</a>
+					</div>
+					<div class="jp-interface">
+						<div class="jp-progress">
+							<div class="jp-seek-bar">
+								<div class="jp-play-bar"></div>
+							</div>
+						</div>
+						<div class="jp-current-time"></div>
+						<div class="jp-duration"></div>
+						<div class="jp-controls-holder">
+							<ul class="jp-controls">
+								<li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+								<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+								<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+								<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+								<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+								<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+								<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+								<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+							</ul>
+							<div class="jp-volume-bar">
+								<div class="jp-volume-bar-value"></div>
+							</div>
+							<!-- <ul class="jp-toggles">
+															<li><a href="javascript:;" class="jp-full-screen" tabindex="1" title="full screen">full screen</a></li>
+															<li><a href="javascript:;" class="jp-restore-screen" tabindex="1" title="restore screen">restore screen</a></li>
+															<li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
+															<li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+															<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+															<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+														</ul> -->
+						</div>
+						<div class="jp-title">
+							<ul>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="jp-playlist">
+					<ul>
+						<!-- The method Playlist.displayPlaylist() uses this unordered list -->
+						<li></li>
+					</ul>
+				</div>
+				<div class="jp-no-solution">
+					<span>Update Required</span>
+					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				</div>
+			</div>
+		</div>
+
 	</header>
+
+	<section class="artist-container artist-1">
+
+		<article class="artist-container">
+
+			<h1>Article Header</h1>
+
+			<p>Etiam pretium odio eu mi convallis vitae varius neque pharetra. Nulla vestibulum nisi ut sem cursus sed mattis nisi egestas.</p>
+
+			<h2>Article Subhead</h2>
+
+			<p>Vestibulum lacus erat, volutpat vel dignissim at, fringilla ut felis.</p>
+
+		</article>
+
+	<section>
+
+	<section class="artist-container artist-2">
+
+		<article class="artist-container">
+
+			<h1>Article Header</h1>
+
+			<p>Etiam pretium odio eu mi convallis vitae varius neque pharetra. Nulla vestibulum nisi ut sem cursus sed mattis nisi egestas.</p>
+
+			<h2>Article Subhead</h2>
+
+			<p>Vestibulum lacus erat, volutpat vel dignissim at, fringilla ut felis.</p>
+
+		</article>
+
+	<section>
 	
-	<article>
+	<section class="artist-container artist-3">
+
+		<article class="artist-container">
+
+			<h1>Article Header</h1>
+
+			<p>Etiam pretium odio eu mi convallis vitae varius neque pharetra. Nulla vestibulum nisi ut sem cursus sed mattis nisi egestas.</p>
+
+			<h2>Article Subhead</h2>
+
+			<p>Vestibulum lacus erat, volutpat vel dignissim at, fringilla ut felis.</p>
+
+		</article>
+
+	<section>
 		
-		<h1>Article Header</h1>
+	<section class="artist-container artist-4">
+
+		<article class="artist-container">
+
+			<h1>Article Header</h1>
+
+			<p>Etiam pretium odio eu mi convallis vitae varius neque pharetra. Nulla vestibulum nisi ut sem cursus sed mattis nisi egestas.</p>
+
+			<h2>Article Subhead</h2>
+
+			<p>Vestibulum lacus erat, volutpat vel dignissim at, fringilla ut felis.</p>
+
+		</article>
+
+	<section>
 		
-		<p>Etiam pretium odio eu mi convallis vitae varius neque pharetra. Nulla vestibulum nisi ut sem cursus sed mattis nisi egestas.</p>
-		
-		<h2>Article Subhead</h2>
-		
-		<p>Vestibulum lacus erat, volutpat vel dignissim at, fringilla ut felis.</p>
-	
-	</article>
-	
-	<aside>
-	
-		<h2>Sidebar Content</h2>
-	
-	</aside>
-	
+	<section class="artist-container artist-5">
+
+		<article class="artist-container">
+
+			<h1>Article Header</h1>
+
+			<p>Etiam pretium odio eu mi convallis vitae varius neque pharetra. Nulla vestibulum nisi ut sem cursus sed mattis nisi egestas.</p>
+
+			<h2>Article Subhead</h2>
+
+			<p>Vestibulum lacus erat, volutpat vel dignissim at, fringilla ut felis.</p>
+
+		</article>
+
+	<section>
+
 	<footer>
-		
+
 		<p><small>&copy; Copyright Your Love Detroit 2011. All Rights Reserved.</small></p>
-		
+
 	</footer>
 
 </div>
@@ -117,11 +225,13 @@
 <script>window.jQuery || document.write("<script src='_/js/jquery-1.7.1.min.js'>\x3C/script>")</script>
 
 <!-- this is where we put our custom functions -->
+<script src="_/js/jquery.jplayer.min.js"></script>
+<script src="_/js/jplayer.playlist.min.js"></script>
 <script src="_/js/functions.js"></script>
 
 <!-- Asynchronous google analytics; this is the official snippet.
 	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
-	 
+
 <script>
 
   var _gaq = _gaq || [];
@@ -136,6 +246,6 @@
 
 </script>
 -->
-  
+
 </body>
 </html>

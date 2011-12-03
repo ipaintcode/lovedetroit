@@ -147,6 +147,43 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 
 
 
+/* Site styles
+-------------------------------------------------------------------------------*/
+.artist-container {
+	width: 100%;
+}
+
+.artist-1 {
+	background: #C7E6E6
+}
+
+.artist-2 {
+	background: #F3F2DC;
+}
+
+.artist-3 {
+	background: #9FE3E2;
+}
+
+.artist-4 {
+	background: #B92A15;
+}
+
+.artist-5 {
+	background: #8FB089;
+}
+
+.wrapper {
+	position: relative;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100px;
+	overflow: hidden;
+}
 
 
 /* Print styles!
