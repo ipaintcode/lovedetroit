@@ -136,8 +136,8 @@ a {color: #03f;}
 a:hover {color: #69f;}
 
 /* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
-::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
-::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+::-moz-selection{background: #FF5A4E; color: #fff; text-shadow: none;}
+::selection {background: #FF5A4E; color: #fff; text-shadow: none;} 
 
 /*	j.mp/webkit-tap-highlight-color */
 a:link {-webkit-tap-highlight-color: #fcd700;} 
@@ -149,6 +149,14 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 
 /* Site styles
 -------------------------------------------------------------------------------*/
+body {
+	background: #E9F3F3;
+}
+
+.center {
+	margin: 0 auto;
+}
+
 .artist-container {
 	width: 100%;
 }
@@ -175,21 +183,50 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 
 .wrapper {
 	position: relative;
+	opacity: 0;
 }
 
 header {
 	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100px;
+	top: 0; left: 0;
+	height: 50px;
 	overflow: hidden;
-	background white;
+	background: rgba(255, 255, 255, .95);
 	border-bottom: 1px solid #99000;
+	z-index: 1000;
+	width: 100%;
 }
 
 .billboard {
 	background: #E9F3F3;
 	width: 100%;
+	position: relative;
+	border-bottom: 7px solid white;
+}
+
+.billboard hgroup {
+	width: 940px;
+}
+
+.billboard h1 {
+	background: url('../img/lovedetroit.png') no-repeat top left;
+	width: 940px; height: 126px;
+	text-indent: -9999px;
+	text-align: center;
+}
+
+.billboard h2 {
+	text-align: center;
+	color: #ff8469;
+	font-style: italic;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.billboard h2 span {
+	text-indent: -9999px;
+	display: inline-block;
+	background: url('../img/teamdetroit.png') no-repeat top left;
+	width: 132px; height: 37px;
 }
 
 footer {

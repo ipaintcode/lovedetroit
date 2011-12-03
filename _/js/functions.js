@@ -6,12 +6,34 @@
 $(document).ready(function(){
 
 function setContainerHeight() {
-	$('.artist-container, .billboard, footer').height($(window).height());
+	
+	if($(window).height() >= 600) {
+		$('.artist-container, .billboard, footer').height($(window).height());
+		setInnerContainerY($('.billboard hgroup'));
+	}
 }
+
+function setInnerContainerY(ele) {	
+	var height = ($('.billboard').height()-$(ele).height())/2;
+	var width = ($(window).width()-$(ele).width())/2;
+	$(ele).css({
+		'position': 'absolute'
+	});
+	$(ele).stop().animate({
+		'top': height,
+		'left': width
+	}, 500);
+}
+
+
+
+$(window).resize(function(event) {
+	setContainerHeight();
+});
 
 setContainerHeight();
 
-$(window).resize(function(event) {
+$('.wrapper').stop().delay(500).animate({opacity: 1}, 500, function() {
 	setContainerHeight();
 });
 
