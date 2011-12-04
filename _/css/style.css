@@ -196,7 +196,6 @@ body {
 
 .artist {
 	width: 960px;
-	background: rgba(255, 255, 255, .2);
 	font-size: 14px;
 	font-style: italic;
 }
@@ -330,9 +329,6 @@ body {
 	background-image: -moz-radial-gradient(50% 50%, rgb(180, 200, 174), rgb(153, 186, 147));
 	background-image: -ms-radial-gradient(50% 50%, rgb(180, 200, 174), rgb(153, 186, 147));
 	background-image: radial-gradient(50% 50%, rgb(180, 200, 174), rgb(153, 186, 147));
-
-
-
 }
 
 .artist-5 .artist {
@@ -411,8 +407,6 @@ header {
 	background-image: -moz-radial-gradient(50% 50%, rgb(253, 255, 255), rgb(228, 239, 237));
 	background-image: -ms-radial-gradient(50% 50%, rgb(253, 255, 255), rgb(228, 239, 237));
 	background-image: radial-gradient(50% 50%, rgb(253, 255, 255), rgb(228, 239, 237));
-
-	
 	width: 100%;
 	position: relative;
 }
@@ -464,9 +458,34 @@ header {
 }
 
 footer {
+	color: #B92A15;
 	background: #F3F2DC;
 	width: 100%;
 }
+
+footer > article > img {
+	margin: 100px 0;
+}
+
+.to-all {
+	background: url('../img/lines.png') no-repeat top left;
+	width: 347px;height: 53px;
+	font-size: 23px;
+	float: left;
+	margin-top: 60px;
+}
+
+.stamp {
+	background: url('../img/stamp.png') no-repeat scroll top left;
+	width: 270px; height: 185px;
+	float: right;
+	text-indent: -9999px;
+}
+
+.bottom-social {
+	float: right;
+}
+
 /*font-family: "ProximaNovaSemibold", Arial, sans-serif;*/
 
 /* Print styles!
