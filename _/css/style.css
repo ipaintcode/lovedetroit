@@ -194,27 +194,95 @@ body {
 	margin: 0 auto;
 }
 
+.artist {
+	width: 960px; height: 400px;
+	background: rgba(255, 255, 255, .2);
+	font-size: 14px;
+	font-style: italic;
+}
+
 .artist-1 {
-	background: #C7E6E6
+	color: #3a5151;
+	background: #C7E6E6;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(164, 190, 190)), to(rgb(221, 255, 255)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(221, 255, 255), rgb(164, 190, 190));
+	background-image: -moz-radial-gradient(50% 50%, rgb(221, 255, 255), rgb(164, 190, 190));
+	background-image: -ms-radial-gradient(50% 50%, rgb(221, 255, 255), rgb(164, 190, 190));
+	background-image: radial-gradient(50% 50%, rgb(221, 255, 255), rgb(164, 190, 190));
+}
+
+.artist-1 h3 {
+	background: url('../img/daniel.png') no-repeat top left;
+	text-indent: -9999px;
+	width: 257px; height: 57px;
 }
 
 .artist-2 {
+	color: #52421c;
 	background: #F3F2DC;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(223, 225, 197)), to(rgb(255, 254, 232)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(255, 254, 232), rgb(223, 225, 197));
+	background-image: -moz-radial-gradient(50% 50%, rgb(255, 254, 232), rgb(223, 225, 197));
+	background-image: -ms-radial-gradient(50% 50%, rgb(255, 254, 232), rgb(223, 225, 197));
+	background-image: radial-gradient(50% 50%, rgb(255, 254, 232), rgb(223, 225, 197));
+}
+
+.artist-2 h3 {
+	background: url('../img/jessica_deltas.png') no-repeat top left;
+	width: 483px; height: 77px;
+	text-indent: -9999px;
 }
 
 .artist-3 {
+	color: white;
 	background: #9FE3E2;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(135, 220, 217)),to(rgb(197, 255, 253)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(197, 255, 253), rgb(135, 220, 217));
+	background-image: -moz-radial-gradient(50% 50%, rgb(197, 255, 253), rgb(135, 220, 217));
+	background-image: -ms-radial-gradient(50% 50%, rgb(197, 255, 253), rgb(135, 220, 217));
+	background-image: radial-gradient(50% 50%, rgb(197, 255, 253), rgb(135, 220, 217));
+}
+
+.artist-3 h3 {
+	background: url('../img/will_sessions.png') no-repeat top left;
+	width: 288px; height: 94px;
+	text-indent: -9999px;
 }
 
 .artist-4 {
+	color: #411414;
 	background: #B92A15;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(185, 42, 21)), to(rgb(197, 78, 55)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(197, 78, 55), rgb(185, 42, 21));
+	background-image: -moz-radial-gradient(50% 50%, rgb(197, 78, 55), rgb(185, 42, 21));
+	background-image: -ms-radial-gradient(50% 50%, rgb(197, 78, 55), rgb(185, 42, 21));
+	background-image: radial-gradient(50% 50%, rgb(197, 78, 55), rgb(185, 42, 21));
+}
+
+.artist-4 h3 {
+	background: url('../img/computer_perfection.png') no-repeat top left;
+	width: 338px; height: 88px;
+	text-indent: -9999px;
 }
 
 .artist-5 {
+	color: #213219;
 	background: #8FB089;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(137, 170, 132)), to(rgb(210, 238, 204)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(210, 238, 204), rgb(137, 170, 132));
+	background-image: -moz-radial-gradient(50% 50%, rgb(210, 238, 204), rgb(137, 170, 132));
+	background-image: -ms-radial-gradient(50% 50%, rgb(210, 238, 204), rgb(137, 170, 132));
+	background-image: radial-gradient(50% 50%, rgb(210, 238, 204), rgb(137, 170, 132));
+}
+
+.artist-5 h3 {
+	background: url('../img/floods.png') no-repeat top left;
+	width: 297px; height: 61px;
+	text-indent: -9999px;
 }
 
 .wrapper {
+	min-width: 960px;
 	position: relative;
 	opacity: 0;
 }
@@ -259,7 +327,17 @@ header {
 }
 
 .billboard {
+	color: #ff8469;
+	font-size: 16px;
+	font-style: italic;
 	background: #E9F3F3;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(228, 239, 237)), to(rgb(253, 255, 255)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(253, 255, 255), rgb(228, 239, 237));
+	background-image: -moz-radial-gradient(50% 50%, rgb(253, 255, 255), rgb(228, 239, 237));
+	background-image: -ms-radial-gradient(50% 50%, rgb(253, 255, 255), rgb(228, 239, 237));
+	background-image: radial-gradient(50% 50%, rgb(253, 255, 255), rgb(228, 239, 237));
+
+	
 	width: 100%;
 	position: relative;
 }
@@ -277,8 +355,7 @@ header {
 
 .billboard h2 {
 	text-align: center;
-	color: #ff8469;
-	font-style: italic;
+	margin-bottom: 5px;
 }
 
 .billboard h2 span {
@@ -286,6 +363,22 @@ header {
 	display: inline-block;
 	background: url('../img/teamdetroit.png') no-repeat top left;
 	width: 132px; height: 37px;
+	position: relative;
+	top: -24px;
+}
+
+.billboard ul {
+	width: 200px;
+	overflow: hidden;
+}
+
+.billboard ul li:first-child {
+	line-height: 32px;
+	margin-right: 10px;
+}
+
+.billboard ul li {
+	float: left;
 }
 
 .resizer-container {
@@ -294,14 +387,6 @@ header {
 
 .centerizer {
 	position: absolute;
-}
-
-.artist {
-	width: 960px;
-	height: 400px;
-	background: rgba(255, 255, 255, .5);
-	font-size: 20px;
-	font-family: "ProximaNovaRegular", Arial, sans-serif;
 }
 
 footer {

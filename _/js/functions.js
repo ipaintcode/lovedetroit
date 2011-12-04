@@ -22,13 +22,14 @@ function setContainerHeight() {
 }
 
 function setInnerContainerY(ele, options) {
-		
+	
 	var x = (options.width-$(ele).width())/2;
 	var y = (options.height-$(ele).height())/2;
+	var minWidth = (options.width <= 960) ? 0 : x;
 		
 	$(ele).stop().animate({
 		'top': y+20,
-		'left': x
+		'left': minWidth
 	}, 1200, 'easeOutElastic');
 }
 
@@ -39,6 +40,14 @@ $(window).resize(function(event) {
 });
 
 setContainerHeight();
+
+function checkHeight() {
+	var h = $('.billboard').height();
+
+}
+
+checkHeight();
+$('.wrapper').css('opacity', 0);
 
 $('.wrapper').stop().delay(500).animate({opacity: 1}, 500, function() {
 	setContainerHeight();
@@ -108,7 +117,7 @@ var myPlaylist = new jPlayerPlaylist({
 			removeTime: 'fast',
 			shuffleTime: 'slow'
 		},
-			swfPath: "_/js/",
+			swfPath: "",
 			supplied: "mp3"
 			// supplied: "webmv, ogv, m4v, oga, mp3"
 	});
