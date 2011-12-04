@@ -42,7 +42,7 @@ div.jp-interface {
 	/* width:418px; */
 	width:100%;
 /*  border:1px solid #009be3;*/
-	background: url('../img/playerlist_bg.png');
+	/*background: url('../img/playerlist_bg.png');*/
 }
 
 div.jp-audio div.jp-type-playlist div.jp-interface {
@@ -322,7 +322,7 @@ div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
     list-style-position:inside;
     padding-left:8px;*/
     color: #f4f4f4;
-    background: url(../img/list_arrow.png) no-repeat left center;
+    /*background: url(../img/list_arrow.png) no-repeat left center;*/
 }
 
 div.jp-playlist h5 {
