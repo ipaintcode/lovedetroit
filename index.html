@@ -55,7 +55,7 @@
 
 	<!-- CSS: screen, mobile & print are all in the same file -->
 	<link rel="stylesheet" href="_/css/style.css">
-	<link href="_/skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+	<link href="_/skin/pink.holiday/jplayer.pink.holiday.css" rel="stylesheet" type="text/css" />
 
 	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
 	<!-- Grab http://www.cdnjs.com/ - CDN Modernizr. fall back to local if necessary -->
@@ -69,64 +69,72 @@
 <div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
 
 	<header>
-
-		<div id="jp_container" class="jp-video jp-video-270p">
-			<div class="jp-type-playlist">
-				<div id="jquery_jplayer" class="jp-jplayer"></div>
-				<div class="jp-gui">
-					<div class="jp-video-play">
-						<a href="javascript:;" class="jp-video-play-icon" tabindex="1">play</a>
-					</div>
-					<div class="jp-interface">
-						<div class="jp-progress">
-							<div class="jp-seek-bar">
-								<div class="jp-play-bar"></div>
+		<section class="center header-wrapper">
+			<div class="jplayer-container-ext">
+				
+				<div id="jp_container" class="jp-audio">
+					<div class="jp-type-playlist">
+						<div id="jquery_jplayer" class="jp-jplayer"></div>
+						<div class="jp-gui">
+							<div class="jp-video-play">
+								<a href="javascript:;" class="jp-video-play-icon" tabindex="1">play</a>
+							</div>
+							<div class="jp-interface">
+								<div class="jp-progress">
+									<div class="jp-seek-bar">
+										<div class="jp-play-bar"></div>
+									</div>
+								</div>
+								<div class="jp-current-time"></div>
+								<div class="jp-duration"></div>
+								<div class="jp-controls-holder">
+									<ul class="jp-controls">
+										<li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+										<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+										<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+										<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+										<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+										<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+										<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+										<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+									</ul>
+									<div class="jp-volume-bar">
+										<div class="jp-volume-bar-value"></div>
+									</div>
+									<!-- <ul class="jp-toggles">
+																	<li><a href="javascript:;" class="jp-full-screen" tabindex="1" title="full screen">full screen</a></li>
+																	<li><a href="javascript:;" class="jp-restore-screen" tabindex="1" title="restore screen">restore screen</a></li>
+																	<li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
+																	<li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+																	<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+																	<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+																</ul> -->
+								</div>
+								<div class="jp-title">
+									<ul>
+										<li></li>
+									</ul>
+								</div>
 							</div>
 						</div>
-						<div class="jp-current-time"></div>
-						<div class="jp-duration"></div>
-						<div class="jp-controls-holder">
-							<ul class="jp-controls">
-								<li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
-								<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
-								<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
-								<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
-								<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
-								<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
-								<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
-								<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
-							</ul>
-							<div class="jp-volume-bar">
-								<div class="jp-volume-bar-value"></div>
-							</div>
-							<!-- <ul class="jp-toggles">
-															<li><a href="javascript:;" class="jp-full-screen" tabindex="1" title="full screen">full screen</a></li>
-															<li><a href="javascript:;" class="jp-restore-screen" tabindex="1" title="restore screen">restore screen</a></li>
-															<li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
-															<li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
-															<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
-															<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
-														</ul> -->
-						</div>
-						<div class="jp-title">
+						<div class="jp-playlist">
 							<ul>
+								<!-- The method Playlist.displayPlaylist() uses this unordered list -->
 								<li></li>
 							</ul>
 						</div>
+						<div class="jp-no-solution">
+							<span>Update Required</span>
+							To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+						</div>
 					</div>
 				</div>
-				<div class="jp-playlist">
-					<ul>
-						<!-- The method Playlist.displayPlaylist() uses this unordered list -->
-						<li></li>
-					</ul>
-				</div>
-				<div class="jp-no-solution">
-					<span>Update Required</span>
-					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-				</div>
+				
 			</div>
-		</div>
+		
+			<a class="download-now" href="#download">Download Album Now!</a>
+		
+		</section>
 
 	</header>
 	
@@ -214,6 +222,10 @@
 <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>window.jQuery || document.write("<script src='_/js/jquery-1.7.1.min.js'>\x3C/script>")</script>
+
+<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script>window.jQuery || document.write("<script src='_/js/jquery-ui.1.8.16.min.js'>\x3C/script>")</script>
 
 <!-- this is where we put our custom functions -->
 <script src="_/js/jquery.easing.1.3.js"></script>

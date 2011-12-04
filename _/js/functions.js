@@ -42,6 +42,20 @@ setContainerHeight();
 
 $('.wrapper').stop().delay(500).animate({opacity: 1}, 500, function() {
 	setContainerHeight();
+	$('#jquery_jplayer').css('height', '0');
+	$('#jquery_jplayer').css('overflow', 'hidden');
+});
+
+$('.download-now').hover(function(event) {
+	$(this).stop().animate({
+		color: "#ca3b36",
+		backgroundColor: "#FF9786"
+	}, 200);
+}, function() {
+	$(this).stop().animate({
+		color: "white",
+		backgroundColor: "#F44439"
+	}, 200);
 });
 
 var myPlaylist = new jPlayerPlaylist({

@@ -169,7 +169,7 @@ body {font: 13px Helmet, Freesans, sans-serif;}
 body, select, input, textarea {color: #333;}
 
 a {color: #03f;}
-a:hover {color: #69f;}
+/*a:hover {color: #69f;}*/
 
 /* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
 ::-moz-selection{background: #FF5A4E; color: #fff; text-shadow: none;}
@@ -187,6 +187,7 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 -------------------------------------------------------------------------------*/
 body {
 	background: #E9F3F3;
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .center {
@@ -221,15 +222,41 @@ body {
 header {
 	position: fixed;
 	top: 0; left: 0;
-	height: 50px;
-	overflow: hidden;
+	height: 70px;
+	/*overflow: hidden;*/
 	background: rgba(255, 255, 255, .95);
 	z-index: 1000;
 	width: 100%;
+	-webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, .05);
+	   -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, .05);
+	        box-shadow: 0 3px 0 rgba(0, 0, 0, .05);
+	
 }
 
-header div {
-	display: none;
+.header-wrapper {
+	width: 960px;
+	position: relative;
+}
+
+.jplayer-container-ext {
+	float: left;
+	background: white;
+	height: 70px;
+
+}
+
+.download-now {
+	float: right;
+	color: white;
+	background: #FF4E48;
+	text-decoration: none;
+	display: inline-block;
+	height: 70px;
+	line-height: 70px;
+	padding: 0 20px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
 }
 
 .billboard {
@@ -253,7 +280,6 @@ header div {
 	text-align: center;
 	color: #ff8469;
 	font-style: italic;
-	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .billboard h2 span {
