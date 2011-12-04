@@ -195,7 +195,7 @@ body {
 }
 
 .artist {
-	width: 960px; height: 400px;
+	width: 960px;
 	background: rgba(255, 255, 255, .2);
 	font-size: 14px;
 	font-style: italic;
@@ -211,10 +211,24 @@ body {
 	background-image: radial-gradient(50% 50%, rgb(221, 255, 255), rgb(164, 190, 190));
 }
 
+.artist-1 .artist {
+	background: url('../img/daniel_image.png') no-repeat center center;
+	width: 570px; height: 556px;
+}
+
 .artist-1 h3 {
+	position: absolute;
 	background: url('../img/daniel.png') no-repeat top left;
 	text-indent: -9999px;
 	width: 257px; height: 57px;
+	top: 37px; left: -110px;
+}
+
+.artist-1 p {
+	position: absolute;
+	top: 165px; left: 140px;
+	width: 195px;
+	line-height: 18px;
 }
 
 .artist-2 {
@@ -227,10 +241,24 @@ body {
 	background-image: radial-gradient(50% 50%, rgb(255, 254, 232), rgb(223, 225, 197));
 }
 
+.artist-2 .artist {
+	background: url('../img/jessica_deltas_image.png') no-repeat center center;
+	width: 690px; height: 521px;
+}
+
 .artist-2 h3 {
+	position: absolute;
 	background: url('../img/jessica_deltas.png') no-repeat top left;
 	width: 483px; height: 77px;
 	text-indent: -9999px;
+	top: 40px; left: -60px;
+}
+
+.artist-2 p {
+	position: absolute;
+	top: 134px; left: 195px;
+	width: 185px;
+	line-height: 18px;
 }
 
 .artist-3 {
@@ -243,10 +271,24 @@ body {
 	background-image: radial-gradient(50% 50%, rgb(197, 255, 253), rgb(135, 220, 217));
 }
 
+.artist-3 .artist {
+	background: url('../img/will_session_image.png') no-repeat center center;
+	width: 827px; height: 499px;
+}
+
 .artist-3 h3 {
+	position: absolute;
 	background: url('../img/will_sessions.png') no-repeat top left;
 	width: 288px; height: 94px;
 	text-indent: -9999px;
+	top: 53px; left: 144px;
+}
+
+.artist-3 p {
+	position: absolute;
+	top: 180px; left: 244px;
+	width: 185px;
+	line-height: 18px;
 }
 
 .artist-4 {
@@ -259,26 +301,59 @@ body {
 	background-image: radial-gradient(50% 50%, rgb(197, 78, 55), rgb(185, 42, 21));
 }
 
+.artist-4 .artist {
+	background: url('../img/computer_perfection_image.png') no-repeat scroll top left;
+	width: 864px;
+	height: 565px;
+}
+
 .artist-4 h3 {
+	position: absolute;
 	background: url('../img/computer_perfection.png') no-repeat top left;
 	width: 338px; height: 88px;
 	text-indent: -9999px;
+	top: 40px; left: 40px;
+}
+
+.artist-4 p {
+	position: absolute;
+	top: 147px; left: 213px;
+	width: 185px;
+	line-height: 18px;
 }
 
 .artist-5 {
 	color: #213219;
 	background: #8FB089;
-	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(137, 170, 132)), to(rgb(210, 238, 204)));
-	background-image: -webkit-radial-gradient(50% 50%, rgb(210, 238, 204), rgb(137, 170, 132));
-	background-image: -moz-radial-gradient(50% 50%, rgb(210, 238, 204), rgb(137, 170, 132));
-	background-image: -ms-radial-gradient(50% 50%, rgb(210, 238, 204), rgb(137, 170, 132));
-	background-image: radial-gradient(50% 50%, rgb(210, 238, 204), rgb(137, 170, 132));
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(153, 186, 147)), to(rgb(180, 200, 174)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(180, 200, 174), rgb(153, 186, 147));
+	background-image: -moz-radial-gradient(50% 50%, rgb(180, 200, 174), rgb(153, 186, 147));
+	background-image: -ms-radial-gradient(50% 50%, rgb(180, 200, 174), rgb(153, 186, 147));
+	background-image: radial-gradient(50% 50%, rgb(180, 200, 174), rgb(153, 186, 147));
+
+
+
 }
 
+.artist-5 .artist {
+	background: url('../img/floods_image.png') no-repeat center center;
+	width: 764px; height: 583px;
+}
+
+
 .artist-5 h3 {
+	position: absolute;
 	background: url('../img/floods.png') no-repeat top left;
 	width: 297px; height: 61px;
 	text-indent: -9999px;
+	top: 40px; left: 126px;
+}
+
+.artist-5 p {
+	position: absolute;
+	top: 147px; left: 213px;
+	width: 310px;
+	line-height: 18px;
 }
 
 .wrapper {
@@ -369,7 +444,6 @@ header {
 
 .billboard ul {
 	width: 200px;
-	overflow: hidden;
 }
 
 .billboard ul li:first-child {
