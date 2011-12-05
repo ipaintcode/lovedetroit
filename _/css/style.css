@@ -292,13 +292,17 @@ a.no-social-font {
 	background-image: -moz-radial-gradient(50% 50%, rgb(221, 255, 255), rgb(92, 143, 150));
 	background-image: -ms-radial-gradient(50% 50%, rgb(221, 255, 255), rgb(92, 143, 150));
 	background-image: radial-gradient(50% 50%, rgb(221, 255, 255), rgb(92, 143, 150));
-
-
 }
 
 .artist-1 .artist {
 	background: url('../img/daniel_image.png') no-repeat center center;
 	width: 570px; height: 556px;
+}
+
+.artist-1 .animate-wrapper {
+	position: absolute;
+	width: 570px; height: 556px;
+	z-index: 100;
 }
 
 .artist-1 h3 {
@@ -331,12 +335,18 @@ a.no-social-font {
 	width: 690px; height: 521px;
 }
 
+.artist-2 .animate-wrapper {
+	position: absolute;
+	width: 690px; height: 521px;
+	z-index: 100;
+}
+
 .artist-2 h3 {
 	position: absolute;
 	background: url('../img/jessica_deltas.png') no-repeat top left;
 	width: 483px; height: 77px;
 	text-indent: -9999px;
-	top: 40px; left: -60px;
+	top: 50px; left: -110px;
 }
 
 .artist-2 p {
@@ -361,12 +371,18 @@ a.no-social-font {
 	width: 827px; height: 499px;
 }
 
+.artist-3 .animate-wrapper {
+	position: absolute;
+	width: 827px; height: 499px;
+	z-index: 100;
+}
+
 .artist-3 h3 {
 	position: absolute;
 	background: url('../img/will_sessions.png') no-repeat top left;
 	width: 288px; height: 94px;
 	text-indent: -9999px;
-	top: 53px; left: 144px;
+	top: 80px; left: 15px;
 }
 
 .artist-3 p {
@@ -388,8 +404,13 @@ a.no-social-font {
 
 .artist-4 .artist {
 	background: url('../img/computer_perfection_image.png') no-repeat scroll top left;
-	width: 864px;
-	height: 565px;
+	width: 864px; height: 565px;
+}
+
+.artist-4 .animate-wrapper {
+	position: absolute;
+	width: 864px; height: 565px;
+	z-index: 100;
 }
 
 .artist-4 h3 {
@@ -397,7 +418,7 @@ a.no-social-font {
 	background: url('../img/computer_perfection.png') no-repeat top left;
 	width: 338px; height: 88px;
 	text-indent: -9999px;
-	top: 40px; left: 40px;
+	top: 40px; left: -115px;
 }
 
 .artist-4 p {
@@ -422,13 +443,18 @@ a.no-social-font {
 	width: 764px; height: 583px;
 }
 
+.artist-5 .animate-wrapper {
+	position: absolute;
+	width: 764px; height: 583px;
+	z-index: 100;
+}
 
 .artist-5 h3 {
 	position: absolute;
 	background: url('../img/floods.png') no-repeat top left;
 	width: 297px; height: 61px;
 	text-indent: -9999px;
-	top: 40px; left: 126px;
+	top: 30px; left: 30px;
 }
 
 .artist-5 p {
