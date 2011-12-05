@@ -293,11 +293,12 @@ body {
 .artist-4 {
 	color: #411414;
 	background: #B92A15;
-	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(187, 50, 28)), to(rgb(215, 102, 87)));
-	background-image: -webkit-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(187, 50, 28));
-	background-image: -moz-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(187, 50, 28));
-	background-image: -ms-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(187, 50, 28));
-	background-image: radial-gradient(50% 50%, rgb(215, 102, 87), rgb(187, 50, 28));
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(171, 43, 23)), to(rgb(215, 102, 87)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
+	background-image: -moz-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
+	background-image: -ms-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
+	background-image: radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
+
 
 }
 
@@ -325,11 +326,12 @@ body {
 .artist-5 {
 	color: #213219;
 	background: #8FB089;
-	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(153, 186, 147)), to(rgb(180, 200, 174)));
-	background-image: -webkit-radial-gradient(50% 50%, rgb(180, 200, 174), rgb(153, 186, 147));
-	background-image: -moz-radial-gradient(50% 50%, rgb(180, 200, 174), rgb(153, 186, 147));
-	background-image: -ms-radial-gradient(50% 50%, rgb(180, 200, 174), rgb(153, 186, 147));
-	background-image: radial-gradient(50% 50%, rgb(180, 200, 174), rgb(153, 186, 147));
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(124, 149, 120)), to(rgb(211, 224, 198)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(211, 224, 198), rgb(124, 149, 120));
+	background-image: -moz-radial-gradient(50% 50%, rgb(211, 224, 198), rgb(124, 149, 120));
+	background-image: -ms-radial-gradient(50% 50%, rgb(211, 224, 198), rgb(124, 149, 120));
+	background-image: radial-gradient(50% 50%, rgb(211, 224, 198), rgb(124, 149, 120));
+
 }
 
 .artist-5 .artist {
