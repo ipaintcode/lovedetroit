@@ -66,7 +66,7 @@ div.jp-interface ul.jp-controls {
 }
 
 div.jp-audio ul.jp-controls {
-	width: 400px;
+	width: 380px;
 	padding:15px 20px 0 20px;
 }
 
@@ -322,7 +322,6 @@ div.jp-playlist {
 	top: 70px; left: -300px;
 	height: 0;
 	overflow: hidden;
-	
 }
 div.jp-type-single div.jp-title,
 div.jp-type-playlist div.jp-title,
@@ -344,7 +343,8 @@ div.jp-title li {
 div.jp-playlist li {
 	/*padding:15px 0 15px 20px;*/
 	border-bottom:1px solid #E5EAEA;
-	height: 70px;
+	height: 60px;
+	padding-top: 10px;
 }
 
 div.jp-playlist li div {
@@ -364,6 +364,9 @@ div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
 div.jp-type-playlist div.jp-playlist a {
 	color: #b29492;
 	text-decoration: none;
+	font-style: italic;
+	font-size: 16px;
+	margin: 0 0 5px 85px;
 }
 div.jp-type-playlist div.jp-playlist a:hover {
 	color: #A70F11;
@@ -396,8 +399,19 @@ div.jp-type-playlist div.jp-playlist span.jp-free-media a:hover{
 	color:#0d88c1;
 }
 span.jp-artist {
-	font-size:.8em;
-	color:#666;
+	font-size: 13px;
+	color: #B29492;
+	display: block;
+	margin-left: 85px;
+	font-style: italic;
+}
+
+div.album-cover {
+	background: red;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	margin-top: -10px;
 }
 
 /* @end */
