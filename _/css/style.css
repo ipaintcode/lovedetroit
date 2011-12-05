@@ -203,11 +203,13 @@ body {
 .artist-1 {
 	color: #3a5151;
 	background: #C7E6E6;
-	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(164, 190, 190)), to(rgb(221, 255, 255)));
-	background-image: -webkit-radial-gradient(50% 50%, rgb(221, 255, 255), rgb(164, 190, 190));
-	background-image: -moz-radial-gradient(50% 50%, rgb(221, 255, 255), rgb(164, 190, 190));
-	background-image: -ms-radial-gradient(50% 50%, rgb(221, 255, 255), rgb(164, 190, 190));
-	background-image: radial-gradient(50% 50%, rgb(221, 255, 255), rgb(164, 190, 190));
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(92, 143, 150)), to(rgb(221, 255, 255)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(221, 255, 255), rgb(92, 143, 150));
+	background-image: -moz-radial-gradient(50% 50%, rgb(221, 255, 255), rgb(92, 143, 150));
+	background-image: -ms-radial-gradient(50% 50%, rgb(221, 255, 255), rgb(92, 143, 150));
+	background-image: radial-gradient(50% 50%, rgb(221, 255, 255), rgb(92, 143, 150));
+
+
 }
 
 .artist-1 .artist {
@@ -233,11 +235,11 @@ body {
 .artist-2 {
 	color: #52421c;
 	background: #F3F2DC;
-	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(223, 225, 197)), to(rgb(255, 254, 232)));
-	background-image: -webkit-radial-gradient(50% 50%, rgb(255, 254, 232), rgb(223, 225, 197));
-	background-image: -moz-radial-gradient(50% 50%, rgb(255, 254, 232), rgb(223, 225, 197));
-	background-image: -ms-radial-gradient(50% 50%, rgb(255, 254, 232), rgb(223, 225, 197));
-	background-image: radial-gradient(50% 50%, rgb(255, 254, 232), rgb(223, 225, 197));
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(160, 143, 91)), to(rgb(215, 213, 185)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(215, 213, 185), rgb(160, 143, 91));
+	background-image: -moz-radial-gradient(50% 50%, rgb(215, 213, 185), rgb(160, 143, 91));
+	background-image: -ms-radial-gradient(50% 50%, rgb(215, 213, 185), rgb(160, 143, 91));
+	background-image: radial-gradient(50% 50%, rgb(215, 213, 185), rgb(160, 143, 91));
 }
 
 .artist-2 .artist {
@@ -263,11 +265,13 @@ body {
 .artist-3 {
 	color: white;
 	background: #9FE3E2;
-	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(135, 220, 217)),to(rgb(197, 255, 253)));
-	background-image: -webkit-radial-gradient(50% 50%, rgb(197, 255, 253), rgb(135, 220, 217));
-	background-image: -moz-radial-gradient(50% 50%, rgb(197, 255, 253), rgb(135, 220, 217));
-	background-image: -ms-radial-gradient(50% 50%, rgb(197, 255, 253), rgb(135, 220, 217));
-	background-image: radial-gradient(50% 50%, rgb(197, 255, 253), rgb(135, 220, 217));
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(97, 151, 150)), to(rgb(220, 255, 249)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(220, 255, 249), rgb(97, 151, 150));
+	background-image: -moz-radial-gradient(50% 50%, rgb(220, 255, 249), rgb(97, 151, 150));
+	background-image: -ms-radial-gradient(50% 50%, rgb(220, 255, 249), rgb(97, 151, 150));
+	background-image: radial-gradient(50% 50%, rgb(220, 255, 249), rgb(97, 151, 150));
+
+
 }
 
 .artist-3 .artist {
@@ -326,12 +330,11 @@ body {
 .artist-5 {
 	color: #213219;
 	background: #8FB089;
-	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(124, 149, 120)), to(rgb(211, 224, 198)));
-	background-image: -webkit-radial-gradient(50% 50%, rgb(211, 224, 198), rgb(124, 149, 120));
-	background-image: -moz-radial-gradient(50% 50%, rgb(211, 224, 198), rgb(124, 149, 120));
-	background-image: -ms-radial-gradient(50% 50%, rgb(211, 224, 198), rgb(124, 149, 120));
-	background-image: radial-gradient(50% 50%, rgb(211, 224, 198), rgb(124, 149, 120));
-
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(81, 110, 81)), to(rgb(198, 220, 187)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(198, 220, 187), rgb(81, 110, 81));
+	background-image: -moz-radial-gradient(50% 50%, rgb(198, 220, 187), rgb(81, 110, 81));
+	background-image: -ms-radial-gradient(50% 50%, rgb(198, 220, 187), rgb(81, 110, 81));
+	background-image: radial-gradient(50% 50%, rgb(198, 220, 187), rgb(81, 110, 81));
 }
 
 .artist-5 .artist {
@@ -407,11 +410,13 @@ header {
 	font-size: 16px;
 	font-style: italic;
 	background: #E9F3F3;
-	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(228, 239, 237)), to(rgb(253, 255, 255)));
-	background-image: -webkit-radial-gradient(50% 50%, rgb(253, 255, 255), rgb(228, 239, 237));
-	background-image: -moz-radial-gradient(50% 50%, rgb(253, 255, 255), rgb(228, 239, 237));
-	background-image: -ms-radial-gradient(50% 50%, rgb(253, 255, 255), rgb(228, 239, 237));
-	background-image: radial-gradient(50% 50%, rgb(253, 255, 255), rgb(228, 239, 237));
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(201, 221, 219)), to(rgb(253, 255, 255)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(253, 255, 255), rgb(201, 221, 219));
+	background-image: -moz-radial-gradient(50% 50%, rgb(253, 255, 255), rgb(201, 221, 219));
+	background-image: -ms-radial-gradient(50% 50%, rgb(253, 255, 255), rgb(201, 221, 219));
+	background-image: radial-gradient(50% 50%, rgb(253, 255, 255), rgb(201, 221, 219));
+
+
 	width: 100%;
 	position: relative;
 }
@@ -469,6 +474,13 @@ header {
 footer {
 	color: #B92A15;
 	background: #F3F2DC;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(224, 208, 165)), to(rgb(255, 254, 232)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(255, 254, 232), rgb(224, 208, 165));
+	background-image: -moz-radial-gradient(50% 50%, rgb(255, 254, 232), rgb(224, 208, 165));
+	background-image: -ms-radial-gradient(50% 50%, rgb(255, 254, 232), rgb(224, 208, 165));
+	background-image: radial-gradient(50% 50%, rgb(255, 254, 232), rgb(224, 208, 165));
+
+	
 	width: 100%;
 }
 
