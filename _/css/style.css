@@ -379,24 +379,54 @@ header {
 	
 }
 
-.header-wrapper {
+section.header-wrapper {
 	width: 960px;
 	position: relative;
-		z-index: 100000;
+	z-index: 100000;
+	height: 70px;
 }
 
 .jplayer-container-ext {
-	float: left;
-	background: white;
-	height: 63px;
+	background: url('../img/player-holder.png') no-repeat top left;
+	width: 420px;
+	height: 70px;
+	display: inline-block;
 }
+
+.artist-status {
+	float: left;
+	width: 300px;
+	font-size: 14px;
+}
+
+.album-art {
+	background: url('../img/album-covers.png') no-repeat 0 0;
+	width: 70px; height: 70px;
+	text-indent: -9999px;
+	float: left;
+}
+
+.artist-name {
+	color: #ff5849;
+	font-style: italic;
+	margin: 15px 0 5px 85px;
+}
+
+.song-name {
+	color: #ff5849;
+	font-style: italic;
+	font-weight: bold;
+	margin-left: 85px;
+}
+
+
 
 .download-now {
 	float: right;
 	color: white;
 	background: #FF4E48;
 	text-decoration: none;
-	display: inline-block;
+	display: block;
 	height: 70px;
 	line-height: 70px;
 	padding: 0 20px;
@@ -507,27 +537,24 @@ footer > article > img {
 	float: right;
 }
 
-.snowflake-container {
-	width: 870px;
+.snowflake-container-left {
+	width: 298px;
 	z-index: 1000;
 	position: absolute;
 	top: 0; left: 50%;
 	margin-left: -480px;
-	height: 7000px;
 	opacity: 0;
-}
-#snowflakes-left {
 	background: url(../img/snowflakes-left.png) repeat-y;
-	width: 298px;
-	height: 100%;
-	float: left;
 }
 
-#snowflakes-right {
-	background: url(../img/snowflakes-right.png) repeat-y;
+.snowflake-container-right {
 	width: 276px;
-	height: 100%;
-	float: right;
+	z-index: 1000;
+	position: absolute;
+	top: 0; right: 50%;
+	margin-right: -410px;
+	opacity: 0;
+	background: url(../img/snowflakes-right.png) repeat-y; 
 }
 
 * html #clouds {

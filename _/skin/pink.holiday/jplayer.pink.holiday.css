@@ -29,11 +29,10 @@ div.jp-video {
 	z-index: 100000000;
 	/*position: absolute;*/
 	/*right: 0;*/
-	height: 63px;
-	margin-top: 17px;
+	width: 400px;
 }
 div.jp-audio {
-	width:500px;
+	width:400px;
 }
 
 div.jp-interface {
@@ -289,7 +288,7 @@ div.jp-audio div.jp-type-playlist div.jp-duration {
 
 div.jp-playlist {
 	/* width:418px; */
-	width:0px;
+	width:500px;
     height: 100%;
     overflow: hidden;
     background: white;
@@ -305,8 +304,10 @@ div.jp-playlist ul {
 }
 
 div.jp-type-playlist div.jp-playlist li {
-	padding:1px 0 0 15px;
-/*  border-bottom:1px solid #eee;*/
+	height: 70px;
+	overflow: hidden;
+	padding-left: 80px;
+	border-bottom:1px solid #eee;
 }
 /*
 div.jp-video div.jp-playlist li {
@@ -315,45 +316,46 @@ div.jp-video div.jp-playlist li {
 }
 */
 div.jp-type-playlist div.jp-playlist li.jp-playlist-last {
-	padding:1px 0 15px 15px;
+	/*padding:1px 0 15px 15px;*/
 }
 div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
 /*  list-style-type:square;
     list-style-position:inside;
     padding-left:8px;*/
-    color: #f4f4f4;
+    color: #000000;
     /*background: url(../img/list_arrow.png) no-repeat left center;*/
 }
-
-div.jp-playlist h5 {
-    padding: 3px 10px 0 15px;
-    display: block;
-    text-transform: uppercase;
-    background: white;
-    margin-left: -32px;
-    width: 300px;
-    color: #f4f4f4;
-}
-
-div.jp-playlist h5 span {
-    color: #a8ceef;
-}
+/**/
+/*div.jp-playlist h5 {*/
+/*    padding: 3px 10px 0 15px;*/
+/*    display: block;*/
+/*    text-transform: uppercase;*/
+/*    background: white;*/
+/*    margin-left: -32px;*/
+/*    width: 300px;*/
+/*    color: #f4f4f4;*/
+/*}*/
+/**/
+/*div.jp-playlist h5 span {*/
+/*    color: #a8ceef;*/
+/*}*/
 
 div.jp-type-playlist div.jp-playlist a {
-	color: #ff5343;
+	color: #b29492;
 	text-decoration: none;
 	font-size: 16px;
-	font-weight: normal;
+	font-weight: bold;
+	font-style: itatic;
+		margin-left: 80px;
 }
 div.jp-type-playlist div.jp-playlist a:hover {
-	color:#7b90a2;
+	color:#A70F11;
 }
 div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
-	color:#f4f4f4;
+	color:#ff5849;
 }
 div.jp-type-playlist div.jp-playlist div.jp-free-media {
 	display:inline;
-	margin-left:20px;
 }
 
 div.jp-jplayer {
@@ -365,4 +367,20 @@ div.jp-jplayer {
 div.jp-jplayer {
 	background-color: #000000;
 }
+
+div.album-art {
+	width: 70px;
+	height: 70px;
+}
+
+.jp-artist {
+	display: block;
+	font-size: 14px;
+	font-weight: normal;
+	margin-left: 80px;
+	top: -35px;
+}
+
+
+
 
