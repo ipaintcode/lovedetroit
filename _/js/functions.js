@@ -141,8 +141,8 @@ var myPlaylist = new jPlayerPlaylist({
 			removeTime: 'fast',
 			shuffleTime: 'slow'
 	},
-		swfPath: "js",
-		supplied: "mp3, oga",
+		swfPath: "_/js/",
+		supplied: "mp3",
 		wmode: "window"
 });
 	
