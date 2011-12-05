@@ -8,7 +8,6 @@ $(document).ready(function(){
 function setContainerHeight() {
 	
 	if($(window).height() >= 600) {
-		//$('.resizer-container').height($(window).height());
 		$('.resizer-container').stop().animate({
 			height: $(window).height()
 		}, 300, 'easeOutElastic');
@@ -18,6 +17,8 @@ function setContainerHeight() {
 				height: $(window).height()
 			});
 		});
+		$('.snowflake-container').height(0);
+		$('.snowflake-container').height($(document).height());
 	}
 }
 
@@ -32,8 +33,6 @@ function setInnerContainerY(ele, options) {
 		'left': minWidth
 	}, 1200, 'easeOutElastic');
 }
-
-
 
 $(window).resize(function(event) {
 	setContainerHeight();
@@ -116,12 +115,33 @@ var myPlaylist = new jPlayerPlaylist({
 			addTime: 'slow',
 			removeTime: 'fast',
 			shuffleTime: 'slow'
-		},
-			swfPath: "",
-			supplied: "mp3"
-			// supplied: "webmv, ogv, m4v, oga, mp3"
-	});
+	},
+		swfPath: "",
+		supplied: "mp3"
+		// supplied: "webmv, ogv, m4v, oga, mp3"
 });
+	
+function calcParallax(tileheight, speedratio, scrollposition) {
+	//    by Brett Taylor http://inner.geek.nz/
+	//    originally published at http://inner.geek.nz/javascript/parallax/
+	//    usable under terms of CC-BY 3.0 licence
+	//    http://creativecommons.org/licenses/by/3.0/
+	return ((tileheight) - (Math.floor(scrollposition / speedratio) % (tileheight+1)));
+}
+
+$(window).scroll(function() {
+	var posX = (document.documentElement.scrollLeft) ? document.documentElement.scrollLeft : window.pageXOffset;
+	var posY = (document.documentElement.scrollTop) ? document.documentElement.scrollTop : window.pageYOffset;
+
+	var snowflake_left = document.getElementById('snowflakes-left');
+	var snowflake_right = document.getElementById('snowflakes-right');
+	var snowflakessparallax = calcParallax(1790, .5, posY);
+	snowflake_left.style.backgroundPosition = "0 " + snowflakessparallax + "px"; 
+	snowflake_right.style.backgroundPosition = "0 " + snowflakessparallax + "px"; 
+});
+
+});
+
 
 /* optional triggers
 

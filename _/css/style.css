@@ -362,6 +362,7 @@ header {
 	position: fixed;
 	top: 0; left: 0;
 	height: 70px;
+	z-index: 100000;
 	/*overflow: hidden;*/
 	background: rgba(255, 255, 255, .95);
 	z-index: 1000;
@@ -375,6 +376,7 @@ header {
 .header-wrapper {
 	width: 960px;
 	position: relative;
+		z-index: 100000;
 }
 
 .jplayer-container-ext {
@@ -449,8 +451,12 @@ header {
 	float: left;
 }
 
+.billboard-social {
+}
+
 .resizer-container {
 	position: relative;
+	z-index: 100;
 }
 
 .centerizer {
@@ -484,6 +490,33 @@ footer > article > img {
 
 .bottom-social {
 	float: right;
+}
+
+.snowflake-container {
+	width: 870px;
+	z-index: 1000;
+	position: absolute;
+	top: 0; left: 50%;
+	margin-left: -480px;
+	height: 7000px;
+}
+#snowflakes-left {
+	background: url(../img/snowflakes-left.png) repeat-y;
+	width: 298px;
+	height: 100%;
+	float: left;
+}
+
+#snowflakes-right {
+	background: url(../img/snowflakes-right.png) repeat-y;
+	width: 276px;
+	height: 100%;
+	float: right;
+}
+
+* html #clouds {
+	/* because IE6 can't do transparent PNGs for backgrounds */
+	background: url(_/img/clouds.png);
 }
 
 /*font-family: "ProximaNovaSemibold", Arial, sans-serif;*/
