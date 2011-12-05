@@ -293,11 +293,12 @@ body {
 .artist-4 {
 	color: #411414;
 	background: #B92A15;
-	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(185, 42, 21)), to(rgb(197, 78, 55)));
-	background-image: -webkit-radial-gradient(50% 50%, rgb(197, 78, 55), rgb(185, 42, 21));
-	background-image: -moz-radial-gradient(50% 50%, rgb(197, 78, 55), rgb(185, 42, 21));
-	background-image: -ms-radial-gradient(50% 50%, rgb(197, 78, 55), rgb(185, 42, 21));
-	background-image: radial-gradient(50% 50%, rgb(197, 78, 55), rgb(185, 42, 21));
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(187, 50, 28)), to(rgb(215, 102, 87)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(187, 50, 28));
+	background-image: -moz-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(187, 50, 28));
+	background-image: -ms-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(187, 50, 28));
+	background-image: radial-gradient(50% 50%, rgb(215, 102, 87), rgb(187, 50, 28));
+
 }
 
 .artist-4 .artist {
