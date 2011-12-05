@@ -68,6 +68,15 @@ $('.download-now').hover(function(event) {
 	}, 200);
 });
 
+$('.artist-status, div.jp-playlist').hover(function() {
+	$('div.jp-playlist').css('borderTop', '1px solid #E5EAEA');
+	$('div.jp-playlist').stop().animate({height: 355}, 300);
+}, function() {
+	$('div.jp-playlist').stop().animate({height: 0}, 300, function() {
+		$('div.jp-playlist').css('borderTop', 'none');
+	});
+});
+
 var myPlaylist = new jPlayerPlaylist({
 		jPlayer: "#jquery_jplayer",
 		cssSelectorAncestor: "#jp_container"
