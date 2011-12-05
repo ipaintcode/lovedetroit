@@ -86,14 +86,14 @@ var myPlaylist = new jPlayerPlaylist({
 			artist:"Millions of Brazilians",
 			mp3:"_/audio/alexandrine.mp3",
 			poster: "_/img/album-covers.png",
-			albumID: "1"
+			albumID: "5"
 		},
 		{	
 			title:"Fur In Winter",
 			artist:"FAWN",
 			mp3:"_/audio/fur_in_winter.mp3",
 			poster: "_/img/album-covers.png",
-			albumID: "2"
+			albumID: "4"
 		},
 		{
 			title:"Second Hand Holiday",
@@ -107,14 +107,14 @@ var myPlaylist = new jPlayerPlaylist({
 			artist:"Daniel",
 			mp3:"_/audio/what_child_is_this.mp3",
 			poster: "_/img/album-covers.png",
-			albumID: "4"
+			albumID: "2"
 		},
 		{
 			title:"Winter Once Again",
 			artist:"Lightning Love",
 			mp3:"_/audio/winter_once_again.mp3",
 			poster: "_/img/album-covers.png",
-			albumID: "5"
+			albumID: "1"
 		}
 	], {
 		playlistOptions: {
