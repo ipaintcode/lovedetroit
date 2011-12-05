@@ -155,6 +155,17 @@ button {width: auto; overflow: visible;}
 	font-style: normal;
 }
 
+@font-face {
+    font-family: 'JustVector';
+    src: url('../fonts/social/justvectorv2-webfont.eot');
+    src: url('../fonts/social/justvectorv2-webfont.eot?#iefix') format('eot'),
+         url('../fonts/social/justvectorv2-webfont.woff') format('woff'),
+         url('../fonts/social/justvectorv2-webfont.ttf') format('truetype'),
+         url('../fonts/social/justvectorv2-webfont.svg#webfontkw9J4lGf') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /* Ok, this is where the fun starts.
 -------------------------------------------------------------------------------*/
@@ -198,6 +209,79 @@ body {
 	width: 960px;
 	font-size: 14px;
 	font-style: italic;
+	position: relative;
+}
+
+.artist-social {
+	position: absolute;
+	top: 50%;
+	margin-top: -114px;
+	left: 783px;
+	width: 50px;
+}
+
+.artist-1 .artist-social {
+	left: 723px;
+}
+
+.artist-1 .artist-social a {
+	color: #56a7a7;
+}
+
+.artist-2 .artist-social {
+	left: 783px;
+}
+
+.artist-2 .artist-social a {
+	color: #534122;
+}
+
+.artist-3 .artist-social {
+	left: 1270px;
+}
+
+.artist-3 .artist-social a {
+	color: #FFFFFF;
+}
+
+.artist-4 .artist-social {
+	left: 870px;
+}
+
+.artist-4 .artist-social a {
+	color: #431314;
+}
+
+.artist-5 .artist-social {
+	left: 820px;
+}
+
+.artist-5 .artist-social a {
+	color: #1F321C;
+}
+
+.artist-social li {
+	margin: 0 0 20px 0;
+}
+
+.artist-social a {
+	text-align: right;
+	text-decoration: none;
+	color: white; /*default color*/
+	font-size: 33px;
+	font-style: normal;
+	font-family: "JustVector", sans-serif;
+	padding-left: 6px;
+}
+
+.artist-social a span {
+	display: none;
+}
+
+a.no-social-font {
+	padding-left: 0;
+	font-size: 20px;
+	font-family: "ProximaNovaSemibold", Arial, san-serif;
 }
 
 .artist-1 {
@@ -270,8 +354,6 @@ body {
 	background-image: -moz-radial-gradient(50% 50%, rgb(220, 255, 249), rgb(97, 151, 150));
 	background-image: -ms-radial-gradient(50% 50%, rgb(220, 255, 249), rgb(97, 151, 150));
 	background-image: radial-gradient(50% 50%, rgb(220, 255, 249), rgb(97, 151, 150));
-
-
 }
 
 .artist-3 .artist {
@@ -302,8 +384,6 @@ body {
 	background-image: -moz-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
 	background-image: -ms-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
 	background-image: radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
-
-
 }
 
 .artist-4 .artist {
@@ -377,6 +457,18 @@ header {
 	   -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, .05);
 	        box-shadow: 0 3px 0 rgba(0, 0, 0, .05);
 	
+}
+
+.playlist-shadow {
+	background: black;
+	height: 0;
+	width: 306px;
+	position: absolute;
+	top: 73px; left: -3px;
+	z-index: 1;
+	opacity: .09;
+	-moz-opacity: .09;
+	filter:alpha(opacity=09);
 }
 
 section.header-wrapper {
@@ -549,7 +641,7 @@ footer > article > img {
 	z-index: 1000;
 	position: absolute;
 	top: 0; right: 50%;
-	margin-right: -410px;
+	margin-right: -400px;
 	opacity: 0;
 	background: url(../img/snowflakes-right.png) repeat-y; 
 }

@@ -141,6 +141,12 @@ div.jp-audio div.jp-progress {
 	position: absolute;
 	top:28px;
 	height:15px;
+	-webkit-background-clip: padding-box; /* fix WebKit background bleed on border-radius */
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	
+	
 }
 div.jp-audio div.jp-type-single div.jp-progress {
 	left:110px;
@@ -161,16 +167,26 @@ div.jp-seek-bar {
 	width:0px;
 	height:100%;
 	cursor: pointer;
+ 	-webkit-background-clip: padding-box; /* fix WebKit background bleed on border-radius */
+ 	-webkit-border-radius: 5px;
+ 	   -moz-border-radius: 5px;
+ 	        border-radius: 5px;
+		
 }
 div.jp-play-bar {
 	background: url("jplayer.pink.png") 0 -218px repeat-x ;
 	width:0px;
 	height:100%;
+ 	-webkit-background-clip: padding-box; /* fix WebKit background bleed on border-radius */
+ 	-webkit-border-radius: 5px;
+ 	   -moz-border-radius: 5px;
+ 	        border-radius: 5px;
 }
 
 /* The seeking class is added/removed inside jPlayer */
 div.jp-seeking-bg {
 	background: url("pbar-ani.png");
+	
 }
 
 /* @end */
@@ -245,6 +261,10 @@ div.jp-volume-bar {
 	width:46px;
 	height:5px;
 	cursor: pointer;
+ 	-webkit-background-clip: padding-box; /* fix WebKit background bleed on border-radius */
+ 	-webkit-border-radius: 3px;
+ 	   -moz-border-radius: 3px;
+ 	        border-radius: 3px;
 }
 div.jp-audio div.jp-volume-bar {
 	top:32px;
@@ -258,6 +278,11 @@ div.jp-volume-bar-value {
 	background: url("jplayer.pink.png") 0 -256px repeat-x;
 	width:0px;
 	height:5px;
+ 	-webkit-background-clip: padding-box; /* fix WebKit background bleed on border-radius */
+ 	-webkit-border-radius: 3px;
+ 	   -moz-border-radius: 3px;
+ 	        border-radius: 3px;
+ 	
 }
 
 /* @end */
@@ -321,6 +346,7 @@ div.jp-playlist {
 	top: 70px; left: -300px;
 	height: 0;
 	overflow: hidden;
+	z-index: 2;
 }
 div.jp-type-single div.jp-title,
 div.jp-type-playlist div.jp-title,
@@ -354,6 +380,7 @@ div.jp-playlist li div {
 
 div.jp-type-playlist div.jp-playlist li:last-child {
 	/*padding:15px 0 15px 20px;*/
+	border-bottom: 1px solid #aaaaaa;
 }
 div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
 	/*list-style-type:square;*/

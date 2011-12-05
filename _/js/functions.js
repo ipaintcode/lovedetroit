@@ -71,10 +71,24 @@ $('.download-now').hover(function(event) {
 $('.artist-status, div.jp-playlist').hover(function() {
 	$('div.jp-playlist').css('borderTop', '1px solid #E5EAEA');
 	$('div.jp-playlist').stop().animate({height: 355}, 300);
+	$('.playlist-shadow').stop().animate({height: 355}, 300);
 }, function() {
 	$('div.jp-playlist').stop().animate({height: 0}, 300, function() {
 		$('div.jp-playlist').css('borderTop', 'none');
 	});
+	$('.playlist-shadow').stop().animate({height: 0}, 300);
+});
+
+$('.artist-social a').each(function(index) {
+	var c = $(this).css('color');
+	$(this).attr('oldColor', c);
+});
+
+$('.artist-social a').hover(function() {
+	$(this).stop().animate({
+		color: "#FF4E48"}, 300);
+}, function() {
+	$(this).stop().animate({color: $(this).attr('oldColor')}, 300);
 });
 
 var myPlaylist = new jPlayerPlaylist({
