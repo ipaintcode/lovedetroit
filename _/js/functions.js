@@ -118,8 +118,9 @@ var myPlaylist = new jPlayerPlaylist({
 			removeTime: 'fast',
 			shuffleTime: 'slow'
 	},
-		swfPath: "_/js",
-		supplied: "mp3"
+		swfPath: "js",
+		supplied: "mp3, oga",
+		wmode: "window"
 });
 	
 function calcParallax(tileheight, speedratio, scrollposition) {
