@@ -52,6 +52,7 @@ $('.wrapper').stop().delay(500).animate({opacity: 1}, 500, function() {
 	setContainerHeight();
 	$('#jquery_jplayer').css('height', '0');
 	$('#jquery_jplayer').css('overflow', 'hidden');
+	$('.snowflake-container').stop().animate({opacity: 0}, 500);
 });
 
 $('.download-now').hover(function(event) {

@@ -514,6 +514,7 @@ footer > article > img {
 	top: 0; left: 50%;
 	margin-left: -480px;
 	height: 7000px;
+	opacity: 0;
 }
 #snowflakes-left {
 	background: url(../img/snowflakes-left.png) repeat-y;
