@@ -665,17 +665,39 @@ footer > article > img {
 	width: 347px;height: 53px;
 	float: right;
 	font-size: 23px;
+	position: relative;
 }
 
-.bsocial-company {
-	background: url('../img/teamdetroit.png') no-repeat top left;
+span.bsocial-company {
+	background: url('../img/teamdetroit_alt.png') no-repeat top left;
 	width: 132px; height: 37px;
+	display: inline-block;
 	text-indent: -9999px;
+	position: absolute;
+	right: 8px;
+	top: -18px;
+}
+
+.share {
+	margin-top: 5px;
+}
+
+.share a {
+	color: #B92A15;
+	text-decoration: none;
 }
 
 .bottom-social .slinks {
 	font-family: "JustVector", sans-serif;
 	font-style: normal;
+	float: right;
+	font-size: 30px;
+}
+
+.bottom-social .twitter {
+	font-size: 40px;
+	margin-right: 8px;
+	margin-top: 2px;
 }
 
 .snowflake-container-left {
@@ -693,7 +715,7 @@ footer > article > img {
 	z-index: 1000;
 	position: absolute;
 	top: 0; right: 50%;
-	margin-right: -433px;
+	margin-right: -425px;
 	opacity: 0;
 	background: url(../img/snowflakes-right.png) repeat-y; 
 }

@@ -126,7 +126,7 @@ $('.play-now a').click(function(event) {
 	}, 500);
 });
 
-$('.billboard h2 span').hover(function() {
+$('.billboard h2 span, .share span, .billboard-hovers').hover(function() {
 	$(this).stop().animate({opacity: .5}, 200);
 }, function() {
 	$(this).stop().animate({opacity: 1}, 200);
