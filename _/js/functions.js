@@ -137,14 +137,14 @@ var myPlaylist = new jPlayerPlaylist({
 		cssSelectorAncestor: "#jp_container"
 	}, [
 		{	
-			title:"Daniel",
+			title:"One More Round With Rudolph",
 			artist:"Daniel",
 			mp3:"_/audio/alexandrine.mp3",
 			poster: "_/img/album-covers.png",
 			albumID: "5"
 		},
 		{	
-			title:"The history of PAN!C",
+			title:"Holiday Panic",
 			artist:"The history of PAN!C",
 			mp3:"_/audio/fur_in_winter.mp3",
 			poster: "_/img/album-covers.png",
@@ -158,14 +158,14 @@ var myPlaylist = new jPlayerPlaylist({
 			albumID: "3"
 		},
 		{
-			title:"Computer Perfection",
+			title:"When The Key Turns"",
 			artist:"Computer Perfection",
 			mp3:"_/audio/what_child_is_this.mp3",
 			poster: "_/img/album-covers.png",
 			albumID: "2"
 		},
 		{
-			title:"Floods",
+			title:"Christmas at Koltay&rsquo;s",
 			artist:"Floods",
 			mp3:"_/audio/winter_once_again.mp3",
 			poster: "_/img/album-covers.png",
