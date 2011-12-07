@@ -103,6 +103,29 @@ $('.artist-social a').hover(function() {
 	$(this).stop().animate({color: $(this).attr('oldColor')}, 300);
 });
 
+$('.play-now a').hover(function() {
+	$(this).stop().animate({opacity: .5}, 500);
+}, function() {
+	$(this).stop().animate({opacity: 1}, 500);
+});
+
+$('.play-now a').click(function(event) {
+	var id = myPlaylist.play();
+	var eleString = ".artist-"+(id+1);
+	$('html,body').stop().animate({
+		scrollTop: $(eleString).offset().top
+	}, 500);
+	
+	$('li.album-art').stop().animate({
+	  'background-position-x': '0',
+	  'background-position-y': ((id+1)*70)*-1+"px"
+	}, 500);
+});
+
+var AUDIO_STATUS = {
+	hasPlayed: false
+}
+
 var myPlaylist = new jPlayerPlaylist({
 		jPlayer: "#jquery_jplayer",
 		cssSelectorAncestor: "#jp_container"

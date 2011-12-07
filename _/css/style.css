@@ -218,6 +218,7 @@ body {
 	margin-top: -114px;
 	left: 783px;
 	width: 50px;
+	z-index: 20000;
 }
 
 .artist-1 .artist-social {
@@ -351,8 +352,8 @@ a.no-social-font {
 
 .artist-2 p {
 	position: absolute;
-	top: 134px; left: 195px;
-	width: 185px;
+	top: 120px; left: 195px;
+	width: 385px;
 	line-height: 18px;
 }
 
@@ -424,7 +425,7 @@ a.no-social-font {
 .artist-4 p {
 	position: absolute;
 	top: 147px; left: 213px;
-	width: 185px;
+	width: 485px;
 	line-height: 18px;
 }
 
@@ -607,6 +608,13 @@ section.header-wrapper {
 }
 
 .billboard-social {
+}
+
+.play-now a {
+	display: block;
+	background:  url('../img/play.png') no-repeat top left;
+	width: 97px; height: 96px;
+	text-indent: -9999px;
 }
 
 .resizer-container {
