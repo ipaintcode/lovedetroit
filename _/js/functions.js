@@ -126,9 +126,11 @@ $('.play-now a').click(function(event) {
 	}, 500);
 });
 
-var AUDIO_STATUS = {
-	hasPlayed: false
-}
+$('.billboard h2 span').hover(function() {
+	$(this).stop().animate({opacity: .5}, 200);
+}, function() {
+	$(this).stop().animate({opacity: 1}, 200);
+});
 
 var myPlaylist = new jPlayerPlaylist({
 		jPlayer: "#jquery_jplayer",

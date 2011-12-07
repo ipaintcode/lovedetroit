@@ -592,6 +592,7 @@ section.header-wrapper {
 	width: 132px; height: 37px;
 	position: relative;
 	top: -24px;
+	z-index: 200000
 }
 
 .billboard ul {
@@ -660,7 +661,21 @@ footer > article > img {
 }
 
 .bottom-social {
+	background: url('../img/lines.png') no-repeat top left;
+	width: 347px;height: 53px;
 	float: right;
+	font-size: 23px;
+}
+
+.bsocial-company {
+	background: url('../img/teamdetroit.png') no-repeat top left;
+	width: 132px; height: 37px;
+	text-indent: -9999px;
+}
+
+.bottom-social .slinks {
+	font-family: "JustVector", sans-serif;
+	font-style: normal;
 }
 
 .snowflake-container-left {
@@ -674,11 +689,11 @@ footer > article > img {
 }
 
 .snowflake-container-right {
-	width: 276px;
+	width: 212px;
 	z-index: 1000;
 	position: absolute;
 	top: 0; right: 50%;
-	margin-right: -400px;
+	margin-right: -433px;
 	opacity: 0;
 	background: url(../img/snowflakes-right.png) repeat-y; 
 }
