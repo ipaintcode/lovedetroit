@@ -356,7 +356,7 @@ div.jp-playlist li div {
 
 div.jp-type-playlist div.jp-playlist li:last-child {
 	/*padding:15px 0 15px 20px;*/
-	border-bottom: 1px solid #aaaaaa;
+	border-bottom: 1px solid #b5b5b5;
 }
 div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
 	/*list-style-type:square;*/
