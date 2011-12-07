@@ -137,36 +137,36 @@ var myPlaylist = new jPlayerPlaylist({
 		cssSelectorAncestor: "#jp_container"
 	}, [
 		{	
-			title:"Alexandrine",
-			artist:"Millions of Brazilians",
+			title:"Daniel",
+			artist:"Daniel",
 			mp3:"_/audio/alexandrine.mp3",
 			poster: "_/img/album-covers.png",
 			albumID: "5"
 		},
 		{	
-			title:"Fur In Winter",
-			artist:"FAWN",
+			title:"The history of PAN!C",
+			artist:"The history of PAN!C",
 			mp3:"_/audio/fur_in_winter.mp3",
 			poster: "_/img/album-covers.png",
 			albumID: "4"
 		},
 		{
-			title:"Second Hand Holiday",
-			artist:"The Armed",
+			title:"Will Sessions",
+			artist:"Will Sessions",
 			mp3:"_/audio/second_hand_holiday.mp3",
 			poster: "_/img/album-covers.png",
 			albumID: "3"
 		},
 		{
-			title:"What Child is This",
-			artist:"Daniel",
+			title:"Computer Perfection",
+			artist:"Computer Perfection",
 			mp3:"_/audio/what_child_is_this.mp3",
 			poster: "_/img/album-covers.png",
 			albumID: "2"
 		},
 		{
-			title:"Winter Once Again",
-			artist:"Lightning Love",
+			title:"Floods",
+			artist:"Floods",
 			mp3:"_/audio/winter_once_again.mp3",
 			poster: "_/img/album-covers.png",
 			albumID: "1"
