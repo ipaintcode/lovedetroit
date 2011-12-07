@@ -158,7 +158,7 @@ var myPlaylist = new jPlayerPlaylist({
 			albumID: "3"
 		},
 		{
-			title:"When The Key Turns"",
+			title:"When The Key Turns",
 			artist:"Computer Perfection",
 			mp3:"_/audio/what_child_is_this.mp3",
 			poster: "_/img/album-covers.png",
