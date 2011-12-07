@@ -333,7 +333,7 @@ a.no-social-font {
 
 .artist-2 .artist {
 	background: url('../img/jessica_deltas_image.png') no-repeat center center;
-	width: 690px; height: 521px;
+	width: 688px; height: 517px;	
 }
 
 .artist-2 .animate-wrapper {
@@ -345,14 +345,14 @@ a.no-social-font {
 .artist-2 h3 {
 	position: absolute;
 	background: url('../img/jessica_deltas.png') no-repeat top left;
-	width: 483px; height: 77px;
+	width: 483px; height: 87px;
 	text-indent: -9999px;
-	top: 50px; left: -110px;
+	top: 30px; left: -30px;
 }
 
 .artist-2 p {
 	position: absolute;
-	top: 120px; left: 195px;
+	top: 120px; left: 170px;
 	width: 385px;
 	line-height: 18px;
 }
@@ -460,7 +460,7 @@ a.no-social-font {
 
 .artist-5 p {
 	position: absolute;
-	top: 147px; left: 213px;
+	top: 134px; left: 213px;
 	width: 310px;
 	line-height: 18px;
 }
@@ -610,6 +610,15 @@ section.header-wrapper {
 
 .billboard-social {
 }
+.fb_share_count {
+	display: none;
+}
+.FBConnectButton_Text {
+	display: block;
+	text-indent: -9999px;
+	width: 28px; height: 27px;
+	background: url('../img/facebook_icon.png') no-repeat top left;
+}
 
 .play-now a {
 	display: block;
@@ -685,6 +694,7 @@ span.bsocial-company {
 .share a {
 	color: #B92A15;
 	text-decoration: none;
+	float: left;
 }
 
 .bottom-social .slinks {
@@ -692,6 +702,8 @@ span.bsocial-company {
 	font-style: normal;
 	float: right;
 	font-size: 30px;
+	position: relative;
+	top: -30px;
 }
 
 .bottom-social .twitter {
