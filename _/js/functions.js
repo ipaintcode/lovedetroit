@@ -144,14 +144,14 @@ var myPlaylist = new jPlayerPlaylist({
 			albumID: "5"
 		},
 		{	
-			title:"Holiday Panic",
-			artist:"The history of PAN!C",
+			title:"Christmas in CDG (Live)",
+			artist:"The History of Pan!c",
 			mp3:"_/audio/fur_in_winter.mp3",
 			poster: "_/img/album-covers.png",
 			albumID: "4"
 		},
 		{
-			title:"Will Sessions",
+			title:"Xmas Break",
 			artist:"Will Sessions",
 			mp3:"_/audio/second_hand_holiday.mp3",
 			poster: "_/img/album-covers.png",
