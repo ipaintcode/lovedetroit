@@ -116,6 +116,10 @@ $('.play-now a').click(function(event) {
 		scrollTop: $(eleString).offset().top
 	}, 500);
 	
+	$(this).stop().delay(200).animate({
+		opacity: 1
+	}, 200);
+	
 	$('li.album-art').stop().animate({
 	  'background-position-x': '0',
 	  'background-position-y': ((id+1)*70)*-1+"px"

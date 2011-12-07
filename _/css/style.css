@@ -615,6 +615,7 @@ section.header-wrapper {
 	background:  url('../img/play.png') no-repeat top left;
 	width: 97px; height: 96px;
 	text-indent: -9999px;
+	margin: 15px 27px;
 }
 
 .resizer-container {
