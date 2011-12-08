@@ -206,6 +206,23 @@ $(window).scroll(function() {
 	snowflake_right.style.backgroundPosition = "0 " + snowflakessparallax + "px"; 
 });
 
+// GOOGLE ANALYTICS
+$.trackPage('UA-20230862-2');
+$.fn.track.defaults.debug = true;
+
+$('.download-now').track({
+	category : 'download-album'
+});
+
+$('.jp-playlist-item').track({
+	category : 'playlist',
+	value: $(this).text()
+});
+
+$(document).bind("contextmenu",function(e){
+	return false;
+});
+
 });
 
 
