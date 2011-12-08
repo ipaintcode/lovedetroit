@@ -569,7 +569,7 @@ section.header-wrapper {
 	position: relative;
 }
 
-.billboard hgroup {
+.billboard .social-container {
 	width: 940px;
 }
 
@@ -609,7 +609,9 @@ section.header-wrapper {
 }
 
 .billboard-social {
+
 }
+
 .fb_share_count {
 	display: none;
 }
