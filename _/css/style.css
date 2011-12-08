@@ -222,19 +222,19 @@ body {
 }
 
 .artist-1 .artist-social {
-	left: 723px;
+	left: 870px;
 }
 
 .artist-1 .artist-social a {
-	color: #56a7a7;
+	color: #431314;
 }
 
 .artist-2 .artist-social {
-	left: 783px;
+	left: 723px;
 }
 
 .artist-2 .artist-social a {
-	color: #534122;
+	color: #56a7a7;
 }
 
 .artist-3 .artist-social {
@@ -246,11 +246,11 @@ body {
 }
 
 .artist-4 .artist-social {
-	left: 870px;
+	left: 783px;
 }
 
 .artist-4 .artist-social a {
-	color: #431314;
+	color: #534122;
 }
 
 .artist-5 .artist-social {
@@ -286,6 +286,42 @@ a.no-social-font {
 }
 
 .artist-1 {
+	color: #411414;
+	background: #B92A15;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(171, 43, 23)), to(rgb(215, 102, 87)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
+	background-image: -moz-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
+	background-image: -ms-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
+	background-image: radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
+}
+
+.artist-1 .artist {
+	background: url('../img/computer_perfection_image.png') no-repeat scroll top left;
+	width: 864px; height: 565px;
+}
+
+.artist-1 .animate-wrapper {
+	position: absolute;
+	width: 864px; height: 565px;
+	z-index: 100;
+}
+
+.artist-1 h3 {
+	position: absolute;
+	background: url('../img/computer_perfection.png') no-repeat top left;
+	width: 338px; height: 88px;
+	text-indent: -9999px;
+	top: 40px; left: 40px;
+}
+
+.artist-1 p {
+	position: absolute;
+	top: 147px; left: 213px;
+	width: 485px;
+	line-height: 18px;
+}
+
+.artist-2 {
 	color: #3a5151;
 	background: #C7E6E6;
 	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(92, 143, 150)), to(rgb(221, 255, 255)));
@@ -295,76 +331,40 @@ a.no-social-font {
 	background-image: radial-gradient(50% 50%, rgb(221, 255, 255), rgb(92, 143, 150));
 }
 
-.artist-1 .artist {
+.artist-2 .artist {
 	background: url('../img/daniel_image.png') no-repeat center center;
 	width: 570px; height: 556px;
 }
 
-.artist-1 .animate-wrapper {
+.artist-2 .animate-wrapper {
 	position: absolute;
 	width: 570px; height: 556px;
 	z-index: 100;
 }
 
-.artist-1 h3 {
+.artist-2 h3 {
 	position: absolute;
 	background: url('../img/daniel.png') no-repeat top left;
 	text-indent: -9999px;
 	width: 257px; height: 57px;
-	top: 37px; left: -110px;
+	top: 37px; left: 40px;
 }
 
-.artist-1 p {
+.artist-2 p {
 	position: absolute;
 	top: 165px; left: 140px;
 	width: 195px;
 	line-height: 18px;
 }
 
-.artist-2 {
-	color: #52421c;
-	background: #F3F2DC;
-	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(160, 143, 91)), to(rgb(215, 213, 185)));
-	background-image: -webkit-radial-gradient(50% 50%, rgb(215, 213, 185), rgb(160, 143, 91));
-	background-image: -moz-radial-gradient(50% 50%, rgb(215, 213, 185), rgb(160, 143, 91));
-	background-image: -ms-radial-gradient(50% 50%, rgb(215, 213, 185), rgb(160, 143, 91));
-	background-image: radial-gradient(50% 50%, rgb(215, 213, 185), rgb(160, 143, 91));
-}
-
-.artist-2 .artist {
-	background: url('../img/jessica_deltas_image.png') no-repeat center center;
-	width: 688px; height: 517px;	
-}
-
-.artist-2 .animate-wrapper {
-	position: absolute;
-	width: 690px; height: 521px;
-	z-index: 100;
-}
-
-.artist-2 h3 {
-	position: absolute;
-	background: url('../img/jessica_deltas.png') no-repeat top left;
-	width: 483px; height: 87px;
-	text-indent: -9999px;
-	top: 30px; left: -30px;
-}
-
-.artist-2 p {
-	position: absolute;
-	top: 120px; left: 170px;
-	width: 385px;
-	line-height: 18px;
-}
-
 .artist-3 {
 	color: white;
 	background: #9FE3E2;
-	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(97, 151, 150)), to(rgb(220, 255, 249)));
-	background-image: -webkit-radial-gradient(50% 50%, rgb(220, 255, 249), rgb(97, 151, 150));
-	background-image: -moz-radial-gradient(50% 50%, rgb(220, 255, 249), rgb(97, 151, 150));
-	background-image: -ms-radial-gradient(50% 50%, rgb(220, 255, 249), rgb(97, 151, 150));
-	background-image: radial-gradient(50% 50%, rgb(220, 255, 249), rgb(97, 151, 150));
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(53, 148, 152)), to(rgb(98, 237, 237)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(98, 237, 237), rgb(53, 148, 152));
+	background-image: -moz-radial-gradient(50% 50%, rgb(98, 237, 237), rgb(53, 148, 152));
+	background-image: -ms-radial-gradient(50% 50%, rgb(98, 237, 237), rgb(53, 148, 152));
+	background-image: radial-gradient(50% 50%, rgb(98, 237, 237), rgb(53, 148, 152));
 }
 
 .artist-3 .artist {
@@ -383,7 +383,7 @@ a.no-social-font {
 	background: url('../img/will_sessions.png') no-repeat top left;
 	width: 288px; height: 94px;
 	text-indent: -9999px;
-	top: 80px; left: 15px;
+	top: 80px; left: 160px;
 }
 
 .artist-3 p {
@@ -394,38 +394,38 @@ a.no-social-font {
 }
 
 .artist-4 {
-	color: #411414;
-	background: #B92A15;
-	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(171, 43, 23)), to(rgb(215, 102, 87)));
-	background-image: -webkit-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
-	background-image: -moz-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
-	background-image: -ms-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
-	background-image: radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
+	color: #52421c;
+	background: #F3F2DC;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(160, 143, 91)), to(rgb(215, 213, 185)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(215, 213, 185), rgb(160, 143, 91));
+	background-image: -moz-radial-gradient(50% 50%, rgb(215, 213, 185), rgb(160, 143, 91));
+	background-image: -ms-radial-gradient(50% 50%, rgb(215, 213, 185), rgb(160, 143, 91));
+	background-image: radial-gradient(50% 50%, rgb(215, 213, 185), rgb(160, 143, 91));
 }
 
 .artist-4 .artist {
-	background: url('../img/computer_perfection_image.png') no-repeat scroll top left;
-	width: 864px; height: 565px;
+	background: url('../img/the_history_of_panic_image.png') no-repeat center center;
+	width: 688px; height: 517px;	
 }
 
 .artist-4 .animate-wrapper {
 	position: absolute;
-	width: 864px; height: 565px;
+	width: 690px; height: 521px;
 	z-index: 100;
 }
 
 .artist-4 h3 {
 	position: absolute;
-	background: url('../img/computer_perfection.png') no-repeat top left;
-	width: 338px; height: 88px;
+	background: url('../img/the_history_of_panic.png') no-repeat top left;
+	width: 483px; height: 87px;
 	text-indent: -9999px;
-	top: 40px; left: -115px;
+	top: 40px; left: 80px;
 }
 
 .artist-4 p {
 	position: absolute;
-	top: 147px; left: 213px;
-	width: 485px;
+	top: 120px; left: 170px;
+	width: 385px;
 	line-height: 18px;
 }
 
@@ -455,7 +455,7 @@ a.no-social-font {
 	background: url('../img/floods.png') no-repeat top left;
 	width: 297px; height: 61px;
 	text-indent: -9999px;
-	top: 30px; left: 30px;
+	top: 44px; left: 200px;
 }
 
 .artist-5 p {
