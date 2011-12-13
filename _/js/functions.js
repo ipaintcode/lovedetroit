@@ -62,6 +62,7 @@ checkHeight();
 
 function checkBrowser() {
 	if(!$.browser.msie) {
+		$('#snowflakes-holder').append("<div id='snowflakes-left' class='snowflake-container-left'></div><div id='snowflakes-right' class='snowflake-container-right'></div>");
 		$('.wrapper').stop().delay(500).animate({opacity: 1}, 500, function() {
 			setContainerHeight();
 			$('#jquery_jplayer').css('height', '0');
@@ -77,6 +78,8 @@ function checkBrowser() {
 		});
 	}
 }
+
+checkBrowser();
 
 $('.download-now').hover(function(event) {
 	$(this).stop().animate({
