@@ -70,7 +70,8 @@ function checkBrowser() {
 			$('.snowflake-container-left, .snowflake-container-right').stop().animate({opacity: 1}, 500);
 		});
 	}else{
-		$('.wrapper').stop().animate({opacity: 1}, 800, function() {
+		$('.wrapper').css('opacity', 0);
+		$('.wrapper').stop().delay(500).animate({opacity: 1}, 800, function() {
 			setContainerHeight();
 			$('#jquery_jplayer').css('height', '0');
 			$('#jquery_jplayer').css('overflow', 'hidden');
