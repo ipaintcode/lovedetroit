@@ -469,6 +469,8 @@ a.no-social-font {
 	min-width: 960px;
 	position: relative;
 	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
 }
 
 header {
