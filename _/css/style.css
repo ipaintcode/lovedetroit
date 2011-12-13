@@ -473,6 +473,12 @@ a.no-social-font {
 	filter:alpha(opacity=0);
 }
 
+section {
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+
 header {
 	position: fixed;
 	top: 0; left: 0;

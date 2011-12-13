@@ -79,7 +79,7 @@ function checkBrowser() {
 	}
 }
 
-//checkBrowser();
+checkBrowser();
 
 $('.download-now').hover(function(event) {
 	$(this).stop().animate({
