@@ -59,7 +59,6 @@ function checkHeight() {
 }
 
 checkHeight();
-$('.wrapper').css('opacity', 0);
 
 function checkBrowser() {
 	if(!$.browser.msie) {
