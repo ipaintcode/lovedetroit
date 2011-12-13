@@ -61,12 +61,23 @@ function checkHeight() {
 checkHeight();
 $('.wrapper').css('opacity', 0);
 
-$('.wrapper').stop().delay(500).animate({opacity: 1}, 500, function() {
-	setContainerHeight();
-	$('#jquery_jplayer').css('height', '0');
-	$('#jquery_jplayer').css('overflow', 'hidden');
-	$('.snowflake-container-left, .snowflake-container-right').stop().animate({opacity: 1}, 500);
-});
+function checkBrowser() {
+	if(!$.browser.msie) {
+		$('.wrapper').stop().delay(500).animate({opacity: 1}, 500, function() {
+			setContainerHeight();
+			$('#jquery_jplayer').css('height', '0');
+			$('#jquery_jplayer').css('overflow', 'hidden');
+			$('.snowflake-container-left, .snowflake-container-right').stop().animate({opacity: 1}, 500);
+		});
+	}else{
+		$('.wrapper').stop().delay(1000).animate({opacity: 1}, 300, function() {
+			setContainerHeight();
+			$('#jquery_jplayer').css('height', '0');
+			$('#jquery_jplayer').css('overflow', 'hidden');
+			$('.snowflake-container-left, .snowflake-container-right').stop().animate({opacity: 1}, 500);
+		});
+	}
+}
 
 $('.download-now').hover(function(event) {
 	$(this).stop().animate({
