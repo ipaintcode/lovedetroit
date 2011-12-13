@@ -468,15 +468,12 @@ a.no-social-font {
 .wrapper {
 	min-width: 960px;
 	position: relative;
-	opacity: 0;
-	-moz-opacity: 0;
-	filter:alpha(opacity=0);
 }
 
-section {
-	opacity: 0;
-	-moz-opacity: 0;
-	filter:alpha(opacity=0);
+.ie_fix {
+	opacity: .01;
+	-moz-opacity: .01;
+	filter:alpha(opacity=01);
 }
 
 header {
@@ -655,7 +652,9 @@ footer {
 	background-image: -moz-radial-gradient(50% 50%, rgb(255, 254, 232), rgb(224, 208, 165));
 	background-image: -ms-radial-gradient(50% 50%, rgb(255, 254, 232), rgb(224, 208, 165));
 	background-image: radial-gradient(50% 50%, rgb(255, 254, 232), rgb(224, 208, 165));
-
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
 	
 	width: 100%;
 }
