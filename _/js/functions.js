@@ -70,7 +70,6 @@ function checkBrowser() {
 			$('.snowflake-container-left, .snowflake-container-right').stop().animate({opacity: 1}, 500);
 		});
 	}else{
-		$('.wrapper').css('opacity', 0);
 		$('.wrapper').stop().delay(500).animate({opacity: 1}, 800, function() {
 			setContainerHeight();
 			$('#jquery_jplayer').css('height', '0');
@@ -80,7 +79,7 @@ function checkBrowser() {
 	}
 }
 
-checkBrowser();
+//checkBrowser();
 
 $('.download-now').hover(function(event) {
 	$(this).stop().animate({
