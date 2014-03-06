@@ -1,3 +1,7 @@
+Love Detroit 2011, niftiest, they reused this site for 2011, 12, 13 fall and 13 winter, way cool!!!
+
+====
+
 #  HTML5 Reset (http://html5reset.org)
 
 ## Summary:
