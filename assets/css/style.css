@@ -743,7 +743,7 @@ span.bsocial-company {
 
 * html #clouds {
 	/* because IE6 can't do transparent PNGs for backgrounds */
-	background: url(_/img/clouds.png);
+	background: url(assets/img/clouds.png);
 }
 
 /*font-family: "ProximaNovaSemibold", Arial, sans-serif;*/

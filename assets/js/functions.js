@@ -154,36 +154,36 @@ var myPlaylist = new jPlayerPlaylist({
 		{
 			title:"When The Key Turns",
 			artist:"Computer Perfection",
-			mp3:"_/audio/When-the-Key-Turns.mp3",
-			poster: "_/img/album-covers.png",
+			mp3:"assets/audio/When-the-Key-Turns.mp3",
+			poster: "assets/img/album-covers.png",
 			albumID: "5" //1
 		},
 		{	
 			title:"One More Round With Rudolph",
 			artist:"Daniel",
-			mp3:"_/audio/One-More-Round-With-Rudolph.mp3",
-			poster: "_/img/album-covers.png",
+			mp3:"assets/audio/One-More-Round-With-Rudolph.mp3",
+			poster: "assets/img/album-covers.png",
 			albumID: "4"
 		},
 		{
 			title:"Xmas Break",
 			artist:"Will Sessions",
-			mp3:"_/audio/Xmas-Break.mp3",
-			poster: "_/img/album-covers.png",
+			mp3:"assets/audio/Xmas-Break.mp3",
+			poster: "assets/img/album-covers.png",
 			albumID: "3"
 		},
 		{	
 			title:"Christmas in CDG (Live)",
 			artist:"The History of Pan!c",
-			mp3:"_/audio/Christmas-in-CDG-(Live).mp3",
-			poster: "_/img/album-covers.png",
+			mp3:"assets/audio/Christmas-in-CDG-(Live).mp3",
+			poster: "assets/img/album-covers.png",
 			albumID: "2"
 		},
 		{
 			title:"Christmas at Koltay&rsquo;s",
 			artist:"Floods",
-			mp3:"_/audio/Christmas-at-Koltays.mp3",
-			poster: "_/img/album-covers.png",
+			mp3:"assets/audio/Christmas-at-Koltays.mp3",
+			poster: "assets/img/album-covers.png",
 			albumID: "1"
 		}
 	], {
@@ -197,7 +197,7 @@ var myPlaylist = new jPlayerPlaylist({
 			removeTime: 'fast',
 			shuffleTime: 'slow'
 	},
-		swfPath: "_/js/",
+		swfPath: "assets/js/",
 		supplied: "mp3",
 		wmode: "window"
 });
