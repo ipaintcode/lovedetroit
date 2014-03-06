@@ -1,0 +1,776 @@
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+	
+	Eric Meyer					:: http://ericmeyer.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+	
+-------------------------------------------------------------------------------*/
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}									
+
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+img,
+object,
+embed {max-width: 100%;}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {overflow-y: scroll;}
+
+/* we use a lot of ULs that aren't bulleted. 
+	don't forget to restore the bullets within content. */
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+	white-space: pre; /* CSS2 */
+	white-space: pre-wrap; /* CSS 2.1 */
+	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+	word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+ 
+/* Accessible focus treatment
+	people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {outline: none;}
+
+small {font-size: 85%;}
+
+strong, th {font-weight: bold;}
+
+td, td img {vertical-align: top;} 
+
+/* Make sure sup and sub don't screw with your line-heights
+	gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button {width: auto; overflow: visible;}
+ 
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover */
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+
+
+
+/* @font-face styles!
+-------------------------------------------------------------------------------*/
+
+@font-face {
+	font-family: 'ProximaNovaBold';
+	src: url('../fonts/bold/ProximaNova-Bold-webfont.eot');
+	src: local('☺'), url('../fonts/bold/ProximaNova-Bold-webfont.woff') format('woff'), url('../fonts/bold/ProximaNova-Bold-webfont.ttf') format('truetype'), url('../fonts/bold/ProximaNova-Bold-webfont.svg#webfontPkpOAKCy') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaRegular';
+	src: url('../fonts/regular/ProximaNova-Reg-webfont.eot');
+	src: local('☺'), url('../fonts/regular/ProximaNova-Reg-webfont.woff') format('woff'), url('../fonts/regular/ProximaNova-Reg-webfont.ttf') format('truetype'), url('../fonts/regular/ProximaNova-Reg-webfont.svg#webfontKqnc2168') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaSemibold';
+	src: url('../fonts/semibold/ProximaNova-Sbold-webfont.eot');
+	src: local('☺'), url('../fonts/semibold/ProximaNova-Sbold-webfont.woff') format('woff'), url('../fonts/semibold/ProximaNova-Sbold-webfont.ttf') format('truetype'), url('../fonts/semibold/ProximaNova-Sbold-webfont.svg#webfontILGjOKPE') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaLight';
+	src: url('../fonts/light/ProximaNova-Light-webfont.eot');
+	src: local('☺'), url('../fonts/light/ProximaNova-Light-webfont.woff') format('woff'), url('../fonts/light/ProximaNova-Light-webfont.ttf') format('truetype'), url('../fonts/light/ProximaNova-Light-webfont.svg#webfontILGjOKPE') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'JustVector';
+    src: url('../fonts/social/justvectorv2-webfont.eot');
+    src: url('../fonts/social/justvectorv2-webfont.eot?#iefix') format('eot'),
+         url('../fonts/social/justvectorv2-webfont.woff') format('woff'),
+         url('../fonts/social/justvectorv2-webfont.ttf') format('truetype'),
+         url('../fonts/social/justvectorv2-webfont.svg#webfontkw9J4lGf') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Ok, this is where the fun starts.
+-------------------------------------------------------------------------------*/
+
+/* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
+body {font: 13px Helmet, Freesans, sans-serif;}
+
+/* using local fonts? make sure to read up on Paul Irish's 
+	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
+
+/* we like off-black for text */
+body, select, input, textarea {color: #333;}
+
+a {color: #03f;}
+/*a:hover {color: #69f;}*/
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #FF5A4E; color: #fff; text-shadow: none;}
+::selection {background: #FF5A4E; color: #fff; text-shadow: none;} 
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;} 
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+
+
+/* Site styles
+-------------------------------------------------------------------------------*/
+body {
+	background: #E9F3F3;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.artist {
+	width: 960px;
+	font-size: 14px;
+	font-style: italic;
+	position: relative;
+}
+
+.artist-social {
+	position: absolute;
+	top: 50%;
+	margin-top: -114px;
+	left: 783px;
+	width: 50px;
+	z-index: 20000;
+}
+
+.artist-1 .artist-social {
+	left: 870px;
+}
+
+.artist-1 .artist-social a {
+	color: #431314;
+}
+
+.artist-2 .artist-social {
+	left: 723px;
+}
+
+.artist-2 .artist-social a {
+	color: #56a7a7;
+}
+
+.artist-3 .artist-social {
+	left: 852px;
+}
+
+.artist-3 .artist-social a {
+	color: #FFFFFF;
+}
+
+.artist-4 .artist-social {
+	left: 783px;
+}
+
+.artist-4 .artist-social a {
+	color: #534122;
+}
+
+.artist-5 .artist-social {
+	left: 820px;
+}
+
+.artist-5 .artist-social a {
+	color: #1F321C;
+}
+
+.artist-social li {
+	margin: 0 0 20px 0;
+}
+
+.artist-social a {
+	text-align: right;
+	text-decoration: none;
+	color: white; /*default color*/
+	font-size: 33px;
+	font-style: normal;
+	font-family: "JustVector", sans-serif;
+	padding-left: 6px;
+}
+
+.artist-social a span {
+	display: none;
+}
+
+a.no-social-font {
+	padding-left: 0;
+	font-size: 20px;
+	font-family: "ProximaNovaSemibold", Arial, san-serif;
+}
+
+.artist-1 {
+	color: #411414;
+	background: #B92A15;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(171, 43, 23)), to(rgb(215, 102, 87)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
+	background-image: -moz-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
+	background-image: -ms-radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
+	background-image: radial-gradient(50% 50%, rgb(215, 102, 87), rgb(171, 43, 23));
+}
+
+.artist-1 .artist {
+	background: url('../img/computer_perfection_image.png') no-repeat scroll top left;
+	width: 864px; height: 565px;
+}
+
+.artist-1 .animate-wrapper {
+	position: absolute;
+	width: 864px; height: 565px;
+	z-index: 100;
+}
+
+.artist-1 h3 {
+	position: absolute;
+	background: url('../img/computer_perfection.png') no-repeat top left;
+	width: 338px; height: 88px;
+	text-indent: -9999px;
+	top: 40px; left: 40px;
+}
+
+.artist-1 p {
+	position: absolute;
+	top: 147px; left: 213px;
+	width: 485px;
+	line-height: 18px;
+}
+
+.artist-2 {
+	color: #3a5151;
+	background: #C7E6E6;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(92, 143, 150)), to(rgb(221, 255, 255)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(221, 255, 255), rgb(92, 143, 150));
+	background-image: -moz-radial-gradient(50% 50%, rgb(221, 255, 255), rgb(92, 143, 150));
+	background-image: -ms-radial-gradient(50% 50%, rgb(221, 255, 255), rgb(92, 143, 150));
+	background-image: radial-gradient(50% 50%, rgb(221, 255, 255), rgb(92, 143, 150));
+}
+
+.artist-2 .artist {
+	background: url('../img/daniel_image.png') no-repeat center center;
+	width: 570px; height: 556px;
+}
+
+.artist-2 .animate-wrapper {
+	position: absolute;
+	width: 570px; height: 556px;
+	z-index: 100;
+}
+
+.artist-2 h3 {
+	position: absolute;
+	background: url('../img/daniel.png') no-repeat top left;
+	text-indent: -9999px;
+	width: 257px; height: 57px;
+	top: 37px; left: 40px;
+}
+
+.artist-2 p {
+	position: absolute;
+	top: 165px; left: 140px;
+	width: 195px;
+	line-height: 18px;
+}
+
+.artist-3 {
+	color: white;
+	background: #9FE3E2;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(53, 148, 152)), to(rgb(98, 237, 237)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(98, 237, 237), rgb(53, 148, 152));
+	background-image: -moz-radial-gradient(50% 50%, rgb(98, 237, 237), rgb(53, 148, 152));
+	background-image: -ms-radial-gradient(50% 50%, rgb(98, 237, 237), rgb(53, 148, 152));
+	background-image: radial-gradient(50% 50%, rgb(98, 237, 237), rgb(53, 148, 152));
+}
+
+.artist-3 .artist {
+	background: url('../img/will_session_image.png') no-repeat center center;
+	width: 827px; height: 499px;
+}
+
+.artist-3 .animate-wrapper {
+	position: absolute;
+	width: 827px; height: 499px;
+	z-index: 100;
+}
+
+.artist-3 h3 {
+	position: absolute;
+	background: url('../img/will_sessions.png') no-repeat top left;
+	width: 288px; height: 94px;
+	text-indent: -9999px;
+	top: 80px; left: 160px;
+}
+
+.artist-3 p {
+	position: absolute;
+	top: 180px; left: 244px;
+	width: 185px;
+	line-height: 18px;
+}
+
+.artist-4 {
+	color: #52421c;
+	background: #F3F2DC;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(160, 143, 91)), to(rgb(215, 213, 185)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(215, 213, 185), rgb(160, 143, 91));
+	background-image: -moz-radial-gradient(50% 50%, rgb(215, 213, 185), rgb(160, 143, 91));
+	background-image: -ms-radial-gradient(50% 50%, rgb(215, 213, 185), rgb(160, 143, 91));
+	background-image: radial-gradient(50% 50%, rgb(215, 213, 185), rgb(160, 143, 91));
+}
+
+.artist-4 .artist {
+	background: url('../img/the_history_of_panic_image.png') no-repeat center center;
+	width: 688px; height: 517px;	
+}
+
+.artist-4 .animate-wrapper {
+	position: absolute;
+	width: 690px; height: 521px;
+	z-index: 100;
+}
+
+.artist-4 h3 {
+	position: absolute;
+	background: url('../img/the_history_of_panic.png') no-repeat top left;
+	width: 483px; height: 87px;
+	text-indent: -9999px;
+	top: 40px; left: 80px;
+}
+
+.artist-4 p {
+	position: absolute;
+	top: 120px; left: 170px;
+	width: 385px;
+	line-height: 18px;
+}
+
+.artist-5 {
+	color: #213219;
+	background: #8FB089;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(81, 110, 81)), to(rgb(198, 220, 187)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(198, 220, 187), rgb(81, 110, 81));
+	background-image: -moz-radial-gradient(50% 50%, rgb(198, 220, 187), rgb(81, 110, 81));
+	background-image: -ms-radial-gradient(50% 50%, rgb(198, 220, 187), rgb(81, 110, 81));
+	background-image: radial-gradient(50% 50%, rgb(198, 220, 187), rgb(81, 110, 81));
+}
+
+.artist-5 .artist {
+	background: url('../img/floods_image.png') no-repeat center center;
+	width: 764px; height: 583px;
+}
+
+.artist-5 .animate-wrapper {
+	position: absolute;
+	width: 764px; height: 583px;
+	z-index: 100;
+}
+
+.artist-5 h3 {
+	position: absolute;
+	background: url('../img/floods.png') no-repeat top left;
+	width: 297px; height: 61px;
+	text-indent: -9999px;
+	top: 44px; left: 200px;
+}
+
+.artist-5 p {
+	position: absolute;
+	top: 134px; left: 213px;
+	width: 310px;
+	line-height: 18px;
+}
+
+.wrapper {
+	min-width: 960px;
+	position: relative;
+}
+
+.ie_fix {
+	opacity: .01;
+	-moz-opacity: .01;
+	filter:alpha(opacity=01);
+}
+
+header {
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	height: 70px;
+	z-index: 100000;
+	/*overflow: hidden;*/
+	background: white;
+	background: rgba(255, 255, 255, .95);
+	z-index: 1000;
+	width: 100%;
+	-webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, .05);
+	   -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, .05);
+	        box-shadow: 0 3px 0 rgba(0, 0, 0, .05);
+	
+}
+
+.playlist-shadow {
+	background: black;
+	height: 0;
+	width: 334px;
+	position: absolute;
+	top: 73px; left: -3px;
+	z-index: 1;
+	opacity: .09;
+	-moz-opacity: .09;
+	filter:alpha(opacity=09);
+}
+
+section.header-wrapper {
+	width: 960px;
+	position: relative;
+	z-index: 100000;
+	height: 70px;
+}
+
+.jplayer-container-ext {
+	display: inline-block;
+}
+
+.artist-status {
+	float: left;
+	width: 300px;
+	font-size: 14px;
+}
+
+.album-art {
+	background: url('../img/album-covers.png') no-repeat 0 0;
+	width: 70px; height: 70px;
+	text-indent: -9999px;
+	float: left;
+}
+
+.artist-name {
+	color: #ff5849;
+	font-style: italic;
+	margin: 15px 0 5px 85px;
+}
+
+.song-name {
+	color: #ff5849;
+	font-style: italic;
+	font-weight: bold;
+	margin-left: 85px;
+}
+
+
+
+.download-now {
+	float: right;
+	color: white;
+	background: #FF4E48;
+	text-decoration: none;
+	display: block;
+	height: 70px;
+	line-height: 70px;
+	padding: 0 20px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.billboard {
+	color: #ff8469;
+	font-size: 16px;
+	font-style: italic;
+	background: #E9F3F3;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(201, 221, 219)), to(rgb(253, 255, 255)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(253, 255, 255), rgb(201, 221, 219));
+	background-image: -moz-radial-gradient(50% 50%, rgb(253, 255, 255), rgb(201, 221, 219));
+	background-image: -ms-radial-gradient(50% 50%, rgb(253, 255, 255), rgb(201, 221, 219));
+	background-image: radial-gradient(50% 50%, rgb(253, 255, 255), rgb(201, 221, 219));
+
+
+	width: 100%;
+	position: relative;
+}
+
+.billboard .social-container {
+	width: 940px;
+}
+
+.billboard h1 {
+	background: url('../img/lovedetroit.png') no-repeat top left;
+	width: 940px; height: 126px;
+	text-indent: -9999px;
+	text-align: center;
+}
+
+.billboard h2 {
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.billboard h2 span {
+	text-indent: -9999px;
+	display: inline-block;
+	background: url('../img/teamdetroit.png') no-repeat top left;
+	width: 132px; height: 37px;
+	position: relative;
+	top: -24px;
+	z-index: 200000
+}
+
+.billboard ul {
+	width: 200px;
+}
+
+.billboard ul li:first-child {
+	line-height: 32px;
+	margin-right: 10px;
+}
+
+.billboard ul li {
+	float: left;
+}
+
+.billboard-social {
+
+}
+
+.fb_share_count {
+	display: none;
+}
+.FBConnectButton_Text {
+	display: block;
+	text-indent: -9999px;
+	width: 28px; height: 27px;
+	background: url('../img/facebook_icon.png') no-repeat top left;
+}
+
+.play-now a {
+	display: block;
+	background:  url('../img/play.png') no-repeat top left;
+	width: 97px; height: 96px;
+	text-indent: -9999px;
+	margin: 15px 27px;
+}
+
+.resizer-container {
+	position: relative;
+	z-index: 100;
+}
+
+.centerizer {
+	position: absolute;
+}
+
+footer {
+	color: #B92A15;
+	background: #F3F2DC;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgb(224, 208, 165)), to(rgb(255, 254, 232)));
+	background-image: -webkit-radial-gradient(50% 50%, rgb(255, 254, 232), rgb(224, 208, 165));
+	background-image: -moz-radial-gradient(50% 50%, rgb(255, 254, 232), rgb(224, 208, 165));
+	background-image: -ms-radial-gradient(50% 50%, rgb(255, 254, 232), rgb(224, 208, 165));
+	background-image: radial-gradient(50% 50%, rgb(255, 254, 232), rgb(224, 208, 165));
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+	
+	width: 100%;
+}
+
+footer > article > img {
+	margin: 100px 0;
+}
+
+.to-all {
+	background: url('../img/lines.png') no-repeat top left;
+	width: 347px;height: 53px;
+	font-size: 23px;
+	float: left;
+	margin-top: 60px;
+}
+
+.stamp {
+	background: url('../img/stamp.png') no-repeat scroll top left;
+	width: 270px; height: 185px;
+	float: right;
+	text-indent: -9999px;
+}
+
+.bottom-social {
+	background: url('../img/lines.png') no-repeat top left;
+	width: 347px;height: 53px;
+	float: right;
+	font-size: 23px;
+	position: relative;
+}
+
+span.bsocial-company {
+	background: url('../img/teamdetroit_alt.png') no-repeat top left;
+	width: 132px; height: 37px;
+	display: inline-block;
+	text-indent: -9999px;
+	position: absolute;
+	right: 8px;
+	top: -18px;
+}
+
+.share {
+	margin-top: 5px;
+}
+
+.share a {
+	color: #B92A15;
+	text-decoration: none;
+	float: left;
+}
+
+.bottom-social .slinks {
+	font-family: "JustVector", sans-serif;
+	font-style: normal;
+	float: right;
+	font-size: 30px;
+	position: relative;
+	top: -30px;
+}
+
+.bottom-social .twitter {
+	font-size: 40px;
+	margin-right: 8px;
+	margin-top: 2px;
+}
+
+.snowflake-container-left {
+	width: 298px;
+	z-index: 1000;
+	position: absolute;
+	top: 0; left: 50%;
+	margin-left: -480px;
+	opacity: 0;
+	background: url(../img/snowflakes-left.png) repeat-y;
+}
+
+.snowflake-container-right {
+	width: 212px;
+	z-index: 1000;
+	position: absolute;
+	top: 0; right: 50%;
+	margin-right: -425px;
+	opacity: 0;
+	background: url(../img/snowflakes-right.png) repeat-y; 
+}
+
+* html #clouds {
+	/* because IE6 can't do transparent PNGs for backgrounds */
+	background: url(_/img/clouds.png);
+}
+
+/*font-family: "ProximaNovaSemibold", Arial, sans-serif;*/
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}
+
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+	
+		
+}
+
+@media all and (orientation: portrait) {
+	
+}
+
+@media all and (orientation: landscape) {
+	
+}
+
