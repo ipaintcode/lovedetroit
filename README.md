@@ -1,4 +1,4 @@
-### Love Detroit 2011, niftiest, it was reused for the 2013 fall and 2013 winter, way cool!!!
+### Love Detroit 2011, niftiest, it was reused for the 2013 fall and 2013 winter sites as well, way cool!!!
 
 ######Original: [Love Detroit 2011](http://ipaintcode.github.io/lovedetroit/)
 ######Fall: [Love Detroit 2013](http://www.love-detroit.com/2013/)
